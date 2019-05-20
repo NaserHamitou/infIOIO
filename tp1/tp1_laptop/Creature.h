@@ -45,6 +45,9 @@ public:
 	void modifierPouvoir(Pouvoir pouvoir);
 
 	void information() ;
+        
+    bool operator==(const Creature& creature) const;
+    Creature& operator=(const Creature& creature);
 
 private:
 

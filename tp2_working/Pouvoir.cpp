@@ -1,7 +1,7 @@
 #include "Pouvoir.h"
 #include <iostream>
 
-
+//allo
 Pouvoir::Pouvoir()
 {
 }

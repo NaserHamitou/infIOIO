@@ -134,3 +134,35 @@ int Creature::experienceGagnee(Creature& creature)
 	}
 	return 0;
 }
+
+bool Creature:: operator==(const Creature& creature) const{ //ici revoir si jdois juste voir si chek legalite entre le nom ou les autres attribut aussi
+    return(nom_== creature.nom_&&
+    attaque_==creature.attaque_&&
+    defense_==creature.defense_&&
+    pointDeVie_==creature.pointDeVie_&&
+    pointDeVieTotal_==creature.pointDeVie_&&
+    energie_== creature.energie_&&
+    energieTotal_==creature.energieTotal_&&
+    experience_==creature.experience_&&
+    experienceNecessaire_==creature.experienceNecessaire_&&
+           niveau_==creature.niveau_);
+    
+    
+}
+Creature& Creature::operator=(const Creature& creature)
+{
+    if (this != &creature)
+    {
+        nom_=creature.nom_;
+        attaque_= creature.attaque_;
+        defense_=creature.defense_;
+        pointDeVie_=creature.pointDeVie_;
+        pointDeVieTotal_=creature.pointDeVieTotal_;
+        energie_=creature.energie_;
+        energieTotal_=creature.energieTotal_;
+        experience_=creature.experience_;
+        experienceNecessaire_=creature.experienceNecessaire_;
+        niveau_=creature.niveau_;
+    }
+    return *this;
+}
