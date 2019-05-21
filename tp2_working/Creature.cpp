@@ -85,7 +85,7 @@ unsigned int Creature::obtenirNiveau() const
 
 vector<Pouvoir*> Creature::obtenirPouvoirs() const
 {
-	return pouvoirs_;					            	/*!! NOT SURE !!*/
+	return pouvoirs_;					            	
 }
 
 void Creature::apprendrePouvoir(const Pouvoir& pouvoir) {
@@ -125,7 +125,7 @@ void Creature::attaquer(Pouvoir& pouvoir, Creature & creature)// A MODIFIER... (
 				else
 					creature.modifierPointDeVie(creature.obtenirPointDeVie() - degat);
 				cout << creature.obtenirNom() << " a encore " << creature.obtenirPointDeVie() << " PV" << endl;
-				energie_ -= pouvoir.obtenirManaNecessaire();
+				energie_ -= pouvoir.obtenirEnergieNecessaire();
 			}
 			else {
 				cout << "Attaque " << pouvoir.obtenirNom() << " a échouée" << endl;
@@ -205,6 +205,25 @@ void Creature::modifierNiveau(unsigned int niveau)
 void Creature::modifierPouvoirs(const vector<Pouvoir*>& pouvoirs) // A MODIFIER... (si necessaire)
 {
 	pouvoirs_ = pouvoirs;
+}
+
+Creature& Creature::operator=(const Creature& creature) {
+	if (this != &creature) {
+		pouvoirs_ = creature.pouvoirs_;
+		nom_ = creature.nom_;
+		attaque_ = creature.attaque_;
+		defense_ = creature.defense_;
+		pointDeVie_ = creature.pointDeVie_;
+		pointDeVieTotal_ = creature.pointDeVieTotal_;
+		energie_ = creature.energie_;
+		energieTotal_ = creature.energieTotal_;
+		experience_ = creature.experience_;
+		experienceNecessaire_ = creature.experienceNecessaire_;
+		niveau_ = creature.niveau_;
+
+	}
+
+	return *this;
 }
 
 bool Creature::operator==(const Creature& creature) const{

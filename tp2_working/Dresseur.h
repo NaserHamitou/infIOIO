@@ -10,19 +10,42 @@
 class Dresseur
 {
 public:
+	
+	//constructeur par defaut 
 	Dresseur(); // A MODIFIER... (si necessaire)
+
+	//constructeur par parametre
 	Dresseur(const string& nom, const string& equipe); // A MODIFIER... (si necessaire)
+
+	//Destructeur
 	~Dresseur(); // A MODIFIER... (si necessaire)
 
+	/*Methode obtenir nom 
+	retourne un string nom_ */
 	string obtenirNom() const;
+
+	/*Methode modifierNom
+	Param string& nom */
 	void modifierNom(const string& nom);
 	
+	/*Methode obtenirNombreCreatures
+	Retourne int nombreCreatures_ */
 	unsigned int obtenirNombreCreatures() const; // A MODIFIER... (si necessaire)
 
+	/*Methode obtenirCreatures 
+	Param string& nom
+	Retourne Creatures* */
 	Creature* obtenirCreatures(const string& nom) const; // A MODIFIER... (si necessaire)
+
+	/*Methode modifierCreature 
+	Param vector<Creature*> creature */
 	void modifierCreature(vector<Creature*> creatures); // A MODIFIER... (si necessaire)              /* !! NOT SURE !! */
 
+	/*Methode obtenirObjetMagique 
+	retourne ObjetMagique */
 	ObjetMagique obtenirObjetMagique() const;
+
+
 	void modifierObjetMagique(const ObjetMagique& objetMagique);
 
 	void utiliserObjetMagique(Creature* creature);

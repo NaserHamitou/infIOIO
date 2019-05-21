@@ -6,6 +6,30 @@
 #include <time.h>
 #include <clocale>  // pour setlocale
 
+/* 
+1. Quelle est l’utilité de l’opérateur = et du constructeur par copie ? 
+
+l'opérateur = permet d'ecraser les valeurs des attributs d'un objet par les valeurs d'un objet qui est passé en parametre.
+
+Le constructeur par copie permet de créer un nouvelle objet en assignant à ses attributs les memes valeurs que les attribut 
+d'objet qui est passé en parametre soit l'objet qui est copier.
+*/
+
+/*
+2. Dans quel cas est-il absolument nécessaire de les implémenter ?
+
+L'implémentation est nécessaire lorsque deux classe ont un lien de composotion par pointeur, car lorsqu'on veut faire la copy de 
+l'objet on veut faire un deep copy et donc alloué un nouvelle espace dynamique pour les pointeurs de l'objet.
+*/
+
+/*
+3. Qu’est-ce qui différencie l’opérateur = du constructeur par copie ?
+
+l’opérateur = est utilisé lorsque on veut ecraser les attributs d'un objet qui existe deja par un autre objet
+Le  constructeur par copie est utilisé lorsqu'on veut créer un objet en lui assignant la valeur des attributs d'un autre objet
+
+*/
+
 int main()
 {
 	srand(time(NULL));

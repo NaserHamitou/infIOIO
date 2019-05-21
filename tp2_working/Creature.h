@@ -22,6 +22,8 @@ public:
 	//Destructeur 
 	~Creature(); // A MODIFIER... (si necessaire)
 
+	/*Methodes d'obtention
+	Retournent l'attribut correspondant */
 	string obtenirNom() const;
 	unsigned int obtenirAttaque() const;
 	unsigned int obtenirDefense() const;
@@ -32,14 +34,25 @@ public:
 	unsigned int obtenirExperience() const;
 	unsigned int obtenirExperienceNecessaire() const;
 	unsigned int obtenirNiveau() const;
-	vector<Pouvoir*> obtenirPouvoirs() const; // A MODIFIER... (si necessaire)    /*!! NOT SURE !!*/
+	vector<Pouvoir*> obtenirPouvoirs() const; // A MODIFIER... (si necessaire)    
 
-	void apprendrePouvoir(const Pouvoir& pouvoir);   /* ??? bool ou void ???*/
-	void oublierPouvoir(Pouvoir* pouvoir);           /*???? prend en parametre: un pointeur -> selon le main ou une reference -> selon la surcharge de == ????*/
+	/*Methode apprendrePouvoir
+	Param Pouvoir& pouvoir */
+	void apprendrePouvoir(const Pouvoir& pouvoir);  
+	/*Methode oublierPouvoir
+	Param Pouvoir* pouvoir */
+	void oublierPouvoir(Pouvoir* pouvoir);          
 
+	/* Methode attaquer
+	Param Pouvoir& pouvoir, Creature& creature*/
 	void attaquer(Pouvoir& pouvoir, Creature& creature);// A MODIFIER... (si necessaire)
+
+	/* Methode experienceGagnee
+	Param Creature& creature */
 	int experienceGagnee(const Creature& creature);
 
+	/*Methode de modification
+	Param meme type qu'attribut correspondant */
 	void modifierNom(const string& nom);
 	void modifierAttaque(unsigned int attaque);
 	void modifierDefense(unsigned int defense);
@@ -48,6 +61,9 @@ public:
 	void modifierExperience(unsigned int experience);
 	void modifierNiveau(unsigned int niveau);
 	void modifierPouvoirs(const vector<Pouvoir*>& pouvoirs); // A MODIFIER... (si necessaire)
+
+
+	Creature& operator=(const Creature& creature);
 
 	/* operateur surcharge ==
 	Param Creature& creature

@@ -16,7 +16,6 @@ Pouvoir::Pouvoir(const Pouvoir& pouvoir) {
 	nom_ = pouvoir.nom_;
 	nombreDeDegat_ = pouvoir.nombreDeDegat_;
 	energieNecessaire_ = pouvoir.energieNecessaire_;
-	manaNecessaire_ = pouvoir.manaNecessaire_;
 }
 
 Pouvoir::~Pouvoir()
@@ -38,9 +37,6 @@ unsigned int Pouvoir::obtenirNombreDeDegat() const
 	return nombreDeDegat_;
 }
 
-unsigned int Pouvoir::obtenirManaNecessaire() const {
-	return manaNecessaire_;
-}
 
 void Pouvoir::modifierNombreDeDegat(unsigned int nombreDegat)
 {
@@ -57,15 +53,21 @@ void Pouvoir::modifierNom(const string& nom)
 	nom_ = nom;
 }
 
-Pouvoir Pouvoir::operator=(const Pouvoir& pouvoir){
-	return pouvoir;
+Pouvoir& Pouvoir::operator=(const Pouvoir& pouvoir){
+
+	if (this != &pouvoir) {
+		nom_ = pouvoir.nom_;
+		nombreDeDegat_ = pouvoir.nombreDeDegat_;
+		energieNecessaire_ = pouvoir.energieNecessaire_;
+
+	}
+	return *this;
 }
 
 bool Pouvoir::operator==(const Pouvoir& pouvoir) {
 	return (nom_ == pouvoir.nom_ &&
 			nombreDeDegat_ == pouvoir.nombreDeDegat_ &&
-			energieNecessaire_ == pouvoir.energieNecessaire_ &&
-			manaNecessaire_ == pouvoir.manaNecessaire_);
+			energieNecessaire_ == pouvoir.energieNecessaire_);
 }
 
 ostream& operator<<(ostream& os, const Pouvoir& pouvoir) {

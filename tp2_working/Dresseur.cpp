@@ -113,10 +113,17 @@ ostream &operator<<(ostream& os, const Dresseur& dresseur) {
  }
 
 bool Dresseur::operator==(const Dresseur& dresseur) const {
-	return(nom_ == dresseur.nom_ &&
-		creatures_ == dresseur.creatures_ &&
-		equipe_ == dresseur.equipe_
-		);
+
+	int nbrCreaturesIdentique = 0;
+
+	for (int i = 0; i < creatures_.size(); i++) {
+		for (int j = 0; j < dresseur.creatures_.size(); j++) {
+			if (creatures_[i] == dresseur.creatures_[j])
+				nbrCreaturesIdentique++;
+		}
+	}
+
+	return(creatures_.size() == nbrCreaturesIdentique && creatures_.size() == dresseur.creatures_.size());
 }
 
 bool Dresseur::operator==(const string& nom) const {
