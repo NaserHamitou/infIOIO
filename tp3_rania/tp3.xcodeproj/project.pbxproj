@@ -1,0 +1,335 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22EC11A52295C4690036C9D5 /* Pouvoir.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22EC11972295C4690036C9D5 /* Pouvoir.cpp */; };
+		22EC11A62295C4690036C9D5 /* PolyLand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22EC11982295C4690036C9D5 /* PolyLand.cpp */; };
+		22EC11A72295C4690036C9D5 /* Dresseur.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22EC119C2295C4690036C9D5 /* Dresseur.cpp */; };
+		22EC11A82295C4690036C9D5 /* EtatCreature.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22EC119D2295C4690036C9D5 /* EtatCreature.cpp */; };
+		22EC11A92295C4690036C9D5 /* OutilScientifique.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22EC11A02295C4690036C9D5 /* OutilScientifique.cpp */; };
+		22EC11AA2295C4690036C9D5 /* ObjetMagique.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22EC11A22295C4690036C9D5 /* ObjetMagique.cpp */; };
+		22EC11AB2295C4690036C9D5 /* Creature.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22EC11A32295C4690036C9D5 /* Creature.cpp */; };
+		22EC11AE2295C47C0036C9D5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22EC11AD2295C47C0036C9D5 /* main.cpp */; };
+		22EC11BA2295CA200036C9D5 /* Professeur.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22EC11B92295CA200036C9D5 /* Professeur.cpp */; };
+		22EC11BF2295E9B90036C9D5 /* EtatConfus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22EC11BE2295E9B90036C9D5 /* EtatConfus.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		22EC118B2295C4090036C9D5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		22EC118D2295C4090036C9D5 /* tp3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = tp3; sourceTree = BUILT_PRODUCTS_DIR; };
+		22EC11972295C4690036C9D5 /* Pouvoir.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Pouvoir.cpp; sourceTree = SOURCE_ROOT; };
+		22EC11982295C4690036C9D5 /* PolyLand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PolyLand.cpp; sourceTree = SOURCE_ROOT; };
+		22EC11992295C4690036C9D5 /* Creature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Creature.h; sourceTree = SOURCE_ROOT; };
+		22EC119A2295C4690036C9D5 /* ObjetMagique.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjetMagique.h; sourceTree = SOURCE_ROOT; };
+		22EC119B2295C4690036C9D5 /* Pouvoir.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pouvoir.h; sourceTree = SOURCE_ROOT; };
+		22EC119C2295C4690036C9D5 /* Dresseur.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Dresseur.cpp; sourceTree = SOURCE_ROOT; };
+		22EC119D2295C4690036C9D5 /* EtatCreature.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EtatCreature.cpp; sourceTree = SOURCE_ROOT; };
+		22EC119E2295C4690036C9D5 /* Dresseur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dresseur.h; sourceTree = SOURCE_ROOT; };
+		22EC119F2295C4690036C9D5 /* OutilScientifique.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OutilScientifique.h; sourceTree = SOURCE_ROOT; };
+		22EC11A02295C4690036C9D5 /* OutilScientifique.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OutilScientifique.cpp; sourceTree = SOURCE_ROOT; };
+		22EC11A12295C4690036C9D5 /* EtatCreature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EtatCreature.h; sourceTree = SOURCE_ROOT; };
+		22EC11A22295C4690036C9D5 /* ObjetMagique.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ObjetMagique.cpp; sourceTree = SOURCE_ROOT; };
+		22EC11A32295C4690036C9D5 /* Creature.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Creature.cpp; sourceTree = SOURCE_ROOT; };
+		22EC11A42295C4690036C9D5 /* PolyLand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolyLand.h; sourceTree = SOURCE_ROOT; };
+		22EC11AC2295C4710036C9D5 /* TypeEtat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TypeEtat.h; sourceTree = SOURCE_ROOT; };
+		22EC11AD2295C47C0036C9D5 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		22EC11B82295C9EB0036C9D5 /* Professeur.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Professeur.h; sourceTree = SOURCE_ROOT; };
+		22EC11B92295CA200036C9D5 /* Professeur.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Professeur.cpp; sourceTree = SOURCE_ROOT; };
+		22EC11BD2295E8AE0036C9D5 /* EtatConfus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EtatConfus.h; sourceTree = SOURCE_ROOT; };
+		22EC11BE2295E9B90036C9D5 /* EtatConfus.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EtatConfus.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22EC118A2295C4090036C9D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22EC11842295C4090036C9D5 = {
+			isa = PBXGroup;
+			children = (
+				22EC118F2295C4090036C9D5 /* tp3 */,
+				22EC118E2295C4090036C9D5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		22EC118E2295C4090036C9D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22EC118D2295C4090036C9D5 /* tp3 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22EC118F2295C4090036C9D5 /* tp3 */ = {
+			isa = PBXGroup;
+			children = (
+				22EC11A32295C4690036C9D5 /* Creature.cpp */,
+				22EC11AD2295C47C0036C9D5 /* main.cpp */,
+				22EC11992295C4690036C9D5 /* Creature.h */,
+				22EC11B82295C9EB0036C9D5 /* Professeur.h */,
+				22EC11B92295CA200036C9D5 /* Professeur.cpp */,
+				22EC119C2295C4690036C9D5 /* Dresseur.cpp */,
+				22EC119E2295C4690036C9D5 /* Dresseur.h */,
+				22EC11BD2295E8AE0036C9D5 /* EtatConfus.h */,
+				22EC11BE2295E9B90036C9D5 /* EtatConfus.cpp */,
+				22EC119D2295C4690036C9D5 /* EtatCreature.cpp */,
+				22EC11A12295C4690036C9D5 /* EtatCreature.h */,
+				22EC11A22295C4690036C9D5 /* ObjetMagique.cpp */,
+				22EC119A2295C4690036C9D5 /* ObjetMagique.h */,
+				22EC11A02295C4690036C9D5 /* OutilScientifique.cpp */,
+				22EC119F2295C4690036C9D5 /* OutilScientifique.h */,
+				22EC11982295C4690036C9D5 /* PolyLand.cpp */,
+				22EC11AC2295C4710036C9D5 /* TypeEtat.h */,
+				22EC11A42295C4690036C9D5 /* PolyLand.h */,
+				22EC11972295C4690036C9D5 /* Pouvoir.cpp */,
+				22EC119B2295C4690036C9D5 /* Pouvoir.h */,
+			);
+			path = tp3;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		22EC118C2295C4090036C9D5 /* tp3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22EC11942295C4090036C9D5 /* Build configuration list for PBXNativeTarget "tp3" */;
+			buildPhases = (
+				22EC11892295C4090036C9D5 /* Sources */,
+				22EC118A2295C4090036C9D5 /* Frameworks */,
+				22EC118B2295C4090036C9D5 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tp3;
+			productName = tp3;
+			productReference = 22EC118D2295C4090036C9D5 /* tp3 */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22EC11852295C4090036C9D5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Rania Abid";
+				TargetAttributes = {
+					22EC118C2295C4090036C9D5 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 22EC11882295C4090036C9D5 /* Build configuration list for PBXProject "tp3" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 22EC11842295C4090036C9D5;
+			productRefGroup = 22EC118E2295C4090036C9D5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22EC118C2295C4090036C9D5 /* tp3 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22EC11892295C4090036C9D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22EC11AB2295C4690036C9D5 /* Creature.cpp in Sources */,
+				22EC11AA2295C4690036C9D5 /* ObjetMagique.cpp in Sources */,
+				22EC11A72295C4690036C9D5 /* Dresseur.cpp in Sources */,
+				22EC11A62295C4690036C9D5 /* PolyLand.cpp in Sources */,
+				22EC11A82295C4690036C9D5 /* EtatCreature.cpp in Sources */,
+				22EC11BA2295CA200036C9D5 /* Professeur.cpp in Sources */,
+				22EC11A52295C4690036C9D5 /* Pouvoir.cpp in Sources */,
+				22EC11AE2295C47C0036C9D5 /* main.cpp in Sources */,
+				22EC11A92295C4690036C9D5 /* OutilScientifique.cpp in Sources */,
+				22EC11BF2295E9B90036C9D5 /* EtatConfus.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		22EC11922295C4090036C9D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		22EC11932295C4090036C9D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		22EC11952295C4090036C9D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		22EC11962295C4090036C9D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22EC11882295C4090036C9D5 /* Build configuration list for PBXProject "tp3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22EC11922295C4090036C9D5 /* Debug */,
+				22EC11932295C4090036C9D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22EC11942295C4090036C9D5 /* Build configuration list for PBXNativeTarget "tp3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22EC11952295C4090036C9D5 /* Debug */,
+				22EC11962295C4090036C9D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 22EC11852295C4090036C9D5 /* Project object */;
+}
