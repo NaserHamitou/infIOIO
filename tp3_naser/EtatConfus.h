@@ -9,10 +9,12 @@ public:
 	EtatConfus(const std::string& nom);
 	EtatConfus(const std::string& nom, unsigned int duree);
 
-	friend EtatConfus& operator<<(std::ostream& os, const EtatConfus& confus);
+	bool peutAttaquer();
+	void appliquerEtat(Creature& creature);
+	bool estFini();
+	   
+};
 
-
-
-}
+std::ostream& operator<<(std::ostream& os, const EtatConfus& confus);
 
 #endif

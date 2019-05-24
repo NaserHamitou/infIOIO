@@ -25,6 +25,7 @@ Description: Programme de test
 #include "GreenBull.h"
 #include "Elixir.h"
 
+
 void appliquerEtatSelonType(Creature& creature) {
     EtatCreature* etat = creature.obtenirEtat();
     EtatEmpoisonne* etatPoison;

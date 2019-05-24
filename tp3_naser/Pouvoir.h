@@ -13,6 +13,10 @@ Description: La classe Pouvoir correspond aux differents attaques
 
 #include "Creature.h"
 #include "TypeEtat.h"
+#include "EtatCreature.h"
+#include "EtatConfus.h"
+#include "EtatEmpoisonne.h"
+#include "EtatEndormi.h"
 
 class Creature;
 
