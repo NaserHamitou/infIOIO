@@ -2,6 +2,7 @@
 #define POUVOIRSOPORIFIQUE_H
 
 #include "Pouvoir.h"
+#include "EtatEndormi.h"
 
 class PouvoirSoporifique : public Pouvoir {
 

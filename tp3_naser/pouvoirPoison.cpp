@@ -12,14 +12,16 @@ PouvoirPoison::PouvoirPoison(const std::string& nom,
 
 void PouvoirPoison::appliquerEffetOffensif(Creature& creatureEnnemie) {
 
-	creatureEnnemie.modifierEtat(new EtatEmpoisonne("poison", duree_));     	         /*!! not sure !!*/
+	creatureEnnemie.modifierEtat(new EtatCreature("poison", duree_));     	         /*!! not sure !!*/
 
 }
 
 std::ostream& operator<<(std::ostream& os, const PouvoirPoison& poison) {
 
-	os << poison.nom_ << " possede un nombre de dégat de " << poison.nombreDeDegat_ <<
-		" et une energie necessaire de " << poison.energieNecessaire_ << std::endl;
+	os << static_cast<Pouvoir>(poison);
+	os << " il peut empoisonner la cible " << std::endl;
+	/*os << poison.nom_ << " possede un nombre de dégat de " << poison.nombreDeDegat_ <<
+		" et une energie necessaire de " << poison.energieNecessaire_ << std::endl;*/
 	return os;
 
 }

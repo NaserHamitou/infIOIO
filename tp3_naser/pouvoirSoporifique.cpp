@@ -14,8 +14,10 @@ void PouvoirSoporifique::appliquerEffetOffensif(Creature& creatureEnnemie) {
 
  std::ostream& operator<<(std::ostream& os, const PouvoirSoporifique& soporifique) {
  
-	 os << soporifique.nom_ << " possede un nombre de dégat de " << soporifique.nombreDeDegat_ <<
-		 " et une energie necessaire de " << soporifique.energieNecessaire_ << std::endl;
+	 os << static_cast<Pouvoir>(soporifique);
+	 os << " il peut endormir la cible" << std::endl;
+	 /*os << soporifique.nom_ << " possede un nombre de dégat de " << soporifique.nombreDeDegat_ <<
+		 " et une energie necessaire de " << soporifique.energieNecessaire_ << std::endl;*/
 	 return os;
 
  }

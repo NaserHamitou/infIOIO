@@ -240,7 +240,7 @@ Creature::Creature(const Creature& creature)
 	attaque_ = creature.attaque_;
 	defense_ = creature.defense_;
 	pointDeVie_ = creature.pointDeVie_;
-    pointDeVieTotal_ = pointDeVieTotal_;
+    pointDeVieTotal_ = creature.pointDeVieTotal_;
 	energie_ = creature.energie_;
     energieTotal_ = creature.energieTotal_;
 	experience_ = creature.experience_;

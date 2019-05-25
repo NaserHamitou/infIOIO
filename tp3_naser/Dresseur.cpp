@@ -8,13 +8,16 @@ Date de modification: 6 septembre 2016 par Maude Carrier
 
 #include "Dresseur.h"
 
-Dresseur::Dresseur() :nom_(""), equipe_("") {};
+Dresseur::Dresseur() :nom_(""), equipe_(""), objetMagique_(nullptr) {};
 
-Dresseur::Dresseur(const std::string& nom, const std::string& equipe) : nom_(nom), equipe_(equipe) {};
+Dresseur::Dresseur(const std::string& nom, const std::string& equipe) : nom_(nom), equipe_(equipe) {
+	objetMagique_ = nullptr;
+};
 
 Dresseur::~Dresseur()
 {
-    delete objetMagique_;
+	delete objetMagique_;
+	objetMagique_ = nullptr;
 };
 
 std::string Dresseur::obtenirNom() const

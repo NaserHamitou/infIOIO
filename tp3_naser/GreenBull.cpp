@@ -15,4 +15,9 @@ void GreenBull::utiliserSur(Creature& creature) const {
 
 }
 
-std::ostream& operator<<(std::ostream& os, const GreenBull& potion) {}
+std::ostream& operator<<(std::ostream& os, const GreenBull& potion) {
+
+	os << "l'objet " << potion.obtenirNom() << "fournit un bonus de " << potion.obtenirBonus() << " point(s) d'energie " << std::endl;
+	return os;
+
+}

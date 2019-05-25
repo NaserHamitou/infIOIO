@@ -11,13 +11,15 @@ PouvoirHallucinogene::PouvoirHallucinogene(const std::string& nom,
 }
 
 void PouvoirHallucinogene::appliquerEffetOffensif(Creature& creatureEnnemie) {
-	creatureEnnemie.modifierEtat(new EtatConfus("confus", duree_));
+	creatureEnnemie.modifierEtat(new EtatCreature("confus", duree_));
 }
 
 std::ostream& operator<<(std::ostream& os, const PouvoirHallucinogene& hallucinogene) {
 
-	os << hallucinogene.nom_ << " possede un nombre de dégat de " << hallucinogene.nombreDeDegat_ <<
-		" et une energie necessaire de " << hallucinogene.energieNecessaire_ << std::endl;
+	os << static_cast<Pouvoir>(hallucinogene);
+	os << " il peut rendre confus la cible" << std::endl;
+	/*os << hallucinogene.nom_ << " possede un nombre de dégat de " << hallucinogene.nombreDeDegat_ <<
+		" et une energie necessaire de " << hallucinogene.energieNecessaire_ << std::endl;*/
 	return os;
 
 }

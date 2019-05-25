@@ -1,21 +1,27 @@
 #include "Professeur.h"
 
-Professeur::Professeur(const string& nom, const string& equipe, OutilScientifique* outil) : Dresseur(nom, equipe), ptrOutilScientifique_(outil) 
-{}
+Professeur::Professeur(const string& nom, const string& equipe) : Dresseur(nom, equipe)
+{
+	outilScientifique_ = nullptr;
+}
 
 Professeur::Professeur(const Professeur& prof) {
 	nom_ = prof.nom_;
 	equipe_ = prof.equipe_;
-	ptrOutilScientifique_ = prof.ptrOutilScientifique_;
+	outilScientifique_ = new OutilScientifique(*prof.outilScientifique_);
 	creatures_ = prof.creatures_;
 }
 
 Professeur::~Professeur() {
-	delete ptrOutilScientifique_;
+		delete outilScientifique_;
+		outilScientifique_ = nullptr;
 }
 
 void Professeur::modifierOutilScientifique(OutilScientifique* outil) {
-	ptrOutilScientifique_ = outil;
+	
+	delete outilScientifique_;
+	outilScientifique_ = nullptr;
+	outilScientifique_ = new OutilScientifique(*outil);
 }
 
 void Professeur::soigner(Creature& creature) {
@@ -28,7 +34,8 @@ Professeur& Professeur::operator=(const Professeur& prof) {
 	if (this != &prof) {
 		nom_ = prof.nom_;
 		equipe_ = prof.equipe_;
-		ptrOutilScientifique_ = ptrOutilScientifique_;
+		delete outilScientifique_;
+		outilScientifique_ = new OutilScientifique(*prof.outilScientifique_);
 	}
 
 	return *this;
@@ -36,6 +43,6 @@ Professeur& Professeur::operator=(const Professeur& prof) {
 }
 
 void Professeur::utiliserOutil(Creature& creature) {
-	ptrOutilScientifique_->utiliser(creature);
+	outilScientifique_->utiliser(creature);
 }
 

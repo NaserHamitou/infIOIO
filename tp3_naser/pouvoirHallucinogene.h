@@ -2,6 +2,7 @@
 #define POUVOIRHALLUCINOGENE_H
 
 #include "Pouvoir.h"
+#include "EtatConfus.h"
 
 class PouvoirHallucinogene : public Pouvoir {
 

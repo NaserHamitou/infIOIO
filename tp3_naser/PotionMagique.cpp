@@ -15,6 +15,6 @@ void PotionMagique::utiliserSur(Creature& creature) const {
 }
 
 std::ostream& operator<<(std::ostream& os, const PotionMagique& potion) {
-	os << "l'objet " << potion.nom_ << "fournit un bonus de " << potion.bonus_ << std::endl;
+	os << "l'objet " << potion.nom_ << "fournit un bonus de " << potion.bonus_ << " points de vie" << std::endl;
 	return os;
 }

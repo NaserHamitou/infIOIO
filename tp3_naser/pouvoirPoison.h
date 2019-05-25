@@ -2,6 +2,7 @@
 #define POUVOIRPOISON_H
 
 #include "Pouvoir.h"
+#include "EtatEmpoisonne.h"
 
 class PouvoirPoison : public Pouvoir {
 

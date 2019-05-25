@@ -65,7 +65,7 @@ public:
 
 	friend std::ostream& operator<<(std::ostream& os, const Creature& creature);
 
-private:
+protected:
 
 	std::string nom_;
 	unsigned int attaque_;
