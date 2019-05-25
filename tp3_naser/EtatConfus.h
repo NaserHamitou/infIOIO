@@ -13,6 +13,7 @@ public:
 	//Constructeur par parametre
 	EtatConfus(const std::string& nom, unsigned int duree);
 
+<<<<<<< HEAD
 	/*Methode peutAttaquer
 	retourn boolean */
 	bool peutAttaquer();
@@ -31,6 +32,14 @@ private :
 };
 
 //operateur << surcharger
+=======
+	bool peutAttaquer();
+	void appliquerEtat(Creature& creature);
+	bool estFini();
+	   
+};
+
+>>>>>>> f7ee4e751e9ec3ce6c07cf6320f00a855590d6df
 std::ostream& operator<<(std::ostream& os, const EtatConfus& confus);
 
 #endif

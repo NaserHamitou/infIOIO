@@ -155,7 +155,11 @@ void afficherEtatSelonType(Creature& creature) {
 
 int main()
 {
+<<<<<<< HEAD
 
+=======
+	
+>>>>>>> f7ee4e751e9ec3ce6c07cf6320f00a855590d6df
 	srand(time(NULL));
     setlocale(LC_ALL, "");
 
@@ -351,7 +355,10 @@ int main()
 
 	cout << " ---------------------------------------------------------FIN-----------------------------------------------------" << endl;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> f7ee4e751e9ec3ce6c07cf6320f00a855590d6df
 	return 0;
 
 	

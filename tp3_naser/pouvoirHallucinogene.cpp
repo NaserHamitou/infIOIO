@@ -10,8 +10,13 @@ PouvoirHallucinogene::PouvoirHallucinogene(const std::string& nom,
 	type_ = TypeEtat_confus;
 }
 
+<<<<<<< HEAD
 void PouvoirHallucinogene::appliquerEffetOffensif(Creature& creatureEnnemie) const {
 	creatureEnnemie.modifierEtat(new EtatConfus("confus", duree_));
+=======
+void PouvoirHallucinogene::appliquerEffetOffensif(Creature& creatureEnnemie) {
+	creatureEnnemie.modifierEtat(new EtatCreature("confus", duree_));
+>>>>>>> f7ee4e751e9ec3ce6c07cf6320f00a855590d6df
 }
 
 std::ostream& operator<<(std::ostream& os, const PouvoirHallucinogene& hallucinogene) {

@@ -9,7 +9,11 @@ EtatEndormi::EtatEndormi(const std::string& nom, unsigned int duree) : EtatCreat
 	type_ = TypeEtat_endormi;
 }
 
+<<<<<<< HEAD
 bool EtatEndormi::peutAttaquer() const {
+=======
+bool EtatEndormi::peutAttaquer() {
+>>>>>>> f7ee4e751e9ec3ce6c07cf6320f00a855590d6df
 	return false;
 }
 

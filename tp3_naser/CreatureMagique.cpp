@@ -12,18 +12,90 @@ CreatureMagique::CreatureMagique(const std::string& nom, unsigned int attaque,
 }
 
 
+<<<<<<< HEAD
 CreatureMagique::CreatureMagique(const CreatureMagique& creature) : Creature(creature) {   /* a ete modifier */
 	bonus_ = creature.bonus_;
+=======
+CreatureMagique::CreatureMagique(const Creature& creature) {
+
+	CreatureMagique creaturemag = static_cast<CreatureMagique>(creature);
+
+	nom_ = creaturemag.nom_;
+	attaque_ = creaturemag.attaque_;
+	defense_ = creaturemag.defense_;
+	pointDeVie_ = creaturemag.pointDeVie_;
+	pointDeVieTotal_ = pointDeVieTotal_;
+	energie_ = creaturemag.energie_;
+	energieTotal_ = creaturemag.energieTotal_;
+	experience_ = creaturemag.experience_;
+	experienceNecessaire_ = creaturemag.experienceNecessaire_;
+	niveau_ = creaturemag.niveau_;
+	pouvoirs_ = creaturemag.pouvoirs_;
+	bonus_ = creaturemag.bonus_;
+
+	if (creaturemag.etat_ != nullptr)
+		etat_ = new EtatCreature(*creature.obtenirEtat());
+	else
+		etat_ = new EtatCreature("normal");
+
+>>>>>>> f7ee4e751e9ec3ce6c07cf6320f00a855590d6df
 }
 
 void CreatureMagique::attaquer(const Pouvoir& pouvoir, Creature& creature) {
 
+<<<<<<< HEAD
 	Creature::attaquer(pouvoir, creature);
 
 	if ((this->obtenirPointDeVie() + bonus_) <= this->obtenirPointDeVieTotal())
 		this->modifierPointDeVie(this->obtenirPointDeVie() + bonus_);
 	else {
 		this->modifierPointDeVie(this->obtenirPointDeVieTotal());
+=======
+
+	bool pouvoirEstDansVector = false;
+	for (unsigned int i = 0; i < pouvoirs_.size(); i++) //S'assurer que votre créature a bien ce pouvoir.
+	{
+		if (*pouvoirs_[i] == pouvoir)
+		{
+			pouvoirEstDansVector = true;
+		}
+	}
+	if (energie_ >= pouvoir.obtenirEnergieNecessaire() && pouvoirEstDansVector)
+	{
+		if (creature.obtenirPointDeVie() >= 0) {
+			//Calcul du nombre de degat selon une formule 
+			unsigned int degat = abs((int)((pouvoir.obtenirNombreDeDegat())* (attaque_ / 2 - creature.obtenirDefense())));
+			int peutAttaquer = rand() % 6;
+			if (peutAttaquer) {
+				std::cout << nom_ << " lance " << pouvoir.obtenirNom() << " qui inflige " << degat
+					<< " degat a " << creature.obtenirNom() << std::endl;
+				if (degat > creature.obtenirPointDeVie()) {
+					creature.modifierPointDeVie(0);
+					int xp = experienceGagnee(creature);
+					std::cout << nom_ << " a gagné " << xp << " XP" << std::endl;
+				}
+				else {
+					creature.modifierPointDeVie(creature.obtenirPointDeVie() - degat);
+				}
+
+				std::cout << creature.obtenirNom() << " a encore " << creature.obtenirPointDeVie() << " PV" << std::endl;
+				energie_ -= pouvoir.obtenirEnergieNecessaire();
+
+				if ((this->obtenirPointDeVie() + bonus_) <= this->obtenirPointDeVieTotal())
+					this->modifierPointDeVie(this->obtenirPointDeVie() + bonus_);
+				else {
+					this->modifierPointDeVie(this->obtenirPointDeVieTotal());
+				}
+			}
+			else {
+				std::cout << "La creature est dans " << *etat_ << std::endl;
+				std::cout << "Attaque " << pouvoir.obtenirNom() << " a échouée" << std::endl;
+			}
+		}
+		else {
+			std::cout << "Vous deja avez vaincu " << creature.obtenirNom() << std::endl;
+		}
+>>>>>>> f7ee4e751e9ec3ce6c07cf6320f00a855590d6df
 	}
 
 }

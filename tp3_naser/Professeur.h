@@ -27,7 +27,11 @@ public:
 	Professeur& operator=(const Professeur& prof);
 
 	//Methode utiliserOutil 
+<<<<<<< HEAD
 	void utiliserOutil(Creature& creature) const;
+=======
+	void utiliserOutil(Creature& creature);
+>>>>>>> f7ee4e751e9ec3ce6c07cf6320f00a855590d6df
 
 
 private:

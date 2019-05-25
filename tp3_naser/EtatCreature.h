@@ -34,7 +34,11 @@ public:
 
 protected:
 	std::string nom_;
+<<<<<<< HEAD
 	unsigned int duree_;
+=======
+    unsigned int duree_;
+>>>>>>> f7ee4e751e9ec3ce6c07cf6320f00a855590d6df
     TypeEtat type_;
 	
 };
