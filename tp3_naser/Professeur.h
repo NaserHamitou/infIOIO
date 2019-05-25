@@ -9,7 +9,7 @@ class Professeur : public Dresseur
 {
 public:
 	//Constructeur parametre
-	Professeur(const string& nom, const string& equipe, OutilScientifique* outil);
+	Professeur(const string& nom, const string& equipe);
 
 	//Constructeur par copie
 	Professeur(const Professeur& prof);
@@ -21,22 +21,18 @@ public:
 	void modifierOutilScientifique(OutilScientifique* outil);
 
 	//Methode soigner 
-	void soigner(Creature& creature);
+	void soigner(Creature& creature) const;
 
 	//Operator surcharge = 
 	Professeur& operator=(const Professeur& prof);
 
 	//Methode utiliserOutil 
-	void utiliserOutil(Creature& creature);
-
-
-
-
+	void utiliserOutil(Creature& creature) const;
 
 
 private:
 
-	OutilScientifique* ptrOutilScientifique_;
+	OutilScientifique* outilScientifique_;
 
 };
 

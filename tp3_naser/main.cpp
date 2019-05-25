@@ -24,6 +24,11 @@ Description: Programme de test
 #include "PouvoirSoporifique.h "
 #include "GreenBull.h"
 #include "Elixir.h"
+#include "EtatCreature.h"
+#include "EtatConfus.h"
+#include "EtatEmpoisonne.h"
+#include "EtatEndormi.h"
+
 
 void appliquerEtatSelonType(Creature& creature) {
     EtatCreature* etat = creature.obtenirEtat();
@@ -44,6 +49,8 @@ void appliquerEtatSelonType(Creature& creature) {
         etatEndormi->appliquerEtat(creature);
         break;
     case TypeEtat_confus: //TODO à compléter
+		etatConfus = static_cast<EtatConfus*>(creature.obtenirEtat());
+		etatConfus->appliquerEtat(creature);
         break;
     default:
         break;
@@ -74,6 +81,8 @@ bool peutAttaquerSelonType(Creature& creature) {
         break;
     case TypeEtat_confus:
         //TODO
+		etatConfus = static_cast<EtatConfus*>(creature.obtenirEtat());
+		peutAttaquer = etatConfus->peutAttaquer();
         break;
     default:
         break;
@@ -92,10 +101,11 @@ bool estFiniSelonType(Creature& creature) {
     {
     case TypeEtat_normal:
         //TODO
+		estFini = etat->estFini();
         break;
     case TypeEtat_empoisonne:
         etatPoison = static_cast<EtatEmpoisonne*>(creature.obtenirEtat());
-        etatPoison->estFini();
+        estFini = etatPoison->estFini();
         break;
     case TypeEtat_endormi:
         etatEndormi = static_cast<EtatEndormi*>(creature.obtenirEtat());
@@ -145,15 +155,20 @@ void afficherEtatSelonType(Creature& creature) {
 
 int main()
 {
+
 	srand(time(NULL));
     setlocale(LC_ALL, "");
 
     std::cout << "BIENVENU DANS LE MONDE MERVEILLEUX DE POLYLAND" << std::endl;
     //TODO créez un Professeur nommé Chen ("Chen", "Laboratoire Poly")
-    
+
+	Professeur Chen("Chen", "Laboratoire Poly");
+
     OutilScientifique scanner("scanner", "étudier une créature");
     std::cout << scanner << std::endl;
     //TODO assigner l'outil scanner au professeur Chen
+	Chen.modifierOutilScientifique(&scanner);
+
     Dresseur mauvaisGars("Jessie", "Team Rocket");
 
     //TODO créez les créatures suivantes
@@ -162,6 +177,11 @@ int main()
     //Salimouche ("Salimouche", 12, 3, 45, 20) type = Creature
     //rondodu ("Rondodu", 10, 2, 50, 25) type = Creature
     //mewtwo ("Mewtwo", 20, 3, 50, 25, 5) type = CreatureMagique
+	Creature miaouss("Miaouss", 10, 2, 50, 22);
+	Creature pokachu("Pokachu", 10, 2, 100, 25);
+	Creature Salimouche("Salimouche", 12, 3, 45, 20);
+	Creature rondodu("Rondodu", 10, 2, 50, 25);
+	CreatureMagique mewtwo("Mewtwo", 20, 3, 50, 25, 5);
     
     std::cout << "TEST : affichage de la créature magique" << std::endl;
     std::cout << mewtwo << std::endl;
@@ -173,7 +193,13 @@ int main()
     //ondeFolie ("onde Folie", 4, 5, 4) type = PouvoirHallucinogene
     //berceuse ("Berceuse", 2, 5, 2) type = PouvoirSoporifique
     //telekinesie ("Telekinesie", 15, 5, 4) type = PouvoirHallucinogene
-    
+	Pouvoir eclair("Eclair", 10, 5);
+	PouvoirPoison morsureVenin("Morsure Venin", 10, 5, 3);
+	PouvoirHallucinogene ondeFolie("onde Folie", 4, 5, 4);
+	PouvoirSoporifique berceuse("Berceuse", 2, 5, 2);
+	PouvoirHallucinogene telekinesie("Telekinesie", 15, 5, 4);
+
+	    
     std::cout << "TEST AFFICHAGE Pouvoir" << std::endl;
     std::cout << eclair << std::endl;
     std::cout << morsureVenin << std::endl;
@@ -205,6 +231,8 @@ int main()
     Dresseur Vous("Etudiant", "Team INF1010");
     Vous.ajouterCreature(&pokachu);
     std::cout << "LA TEAM MISSILE VOUS ATTAQUE" << std::endl;
+
+
     while (miaouss.obtenirPointDeVie() > 0 && pokachu.obtenirPointDeVie() > 0)
     {      
         miaouss.attaquer(morsureVenin, pokachu);
@@ -218,7 +246,7 @@ int main()
             pokachu.modifierEtat(new EtatCreature("normal")); //attention aux fuites mémoires
 
         std::cout << "affichage de l'etat de Pokachu" << std::endl;
-        std::cout << "Pokachu est dans l'état: " << *(pokachu.obtenirEtat()) << std::endl;
+        std::cout << "Pokachu est dans l'état: " << *(pokachu.obtenirEtat()) << std::endl;						/* Faut-il afficher la duree de letat ???? */
         std::cout << "affichage de l'etat de Pokachu (autre méthode)" << std::endl;
         afficherEtatSelonType(pokachu);
     }
@@ -229,6 +257,7 @@ int main()
     else {
         std::cout << "Hum Pokachu est mal en point" << std::endl;
     }
+
     //Test potion magique
     PotionMagique potion("Potion", 10);
     unsigned int ancienPointDeVie = pokachu.obtenirPointDeVie();
@@ -257,6 +286,7 @@ int main()
         pokachu.obtenirPointDeVie() == ancienPointDeVie + 20) {
         std::cout << "Elixir: OK" << std::endl;
     }
+
     //Le professeur soigne votre créature
     Chen.soigner(pokachu);
     if (pokachu.obtenirPointDeVie() == pokachu.obtenirPointDeVieTotal() &&
@@ -288,7 +318,10 @@ int main()
         //TODO : afficher l'etat en prenant en compte le type
         //Indice: regardez plus haut dans le code
         //et répondre à la question relative à l'affichage
+
+		afficherEtatSelonType(pokachu);
     }
+
     Chen.soigner(pokachu);
     std::cout << "Votre Pokachu surprend un rondodu, terrifié celui-ci lui chante une berceuse" << std::endl;
     rondodu.attaquer(berceuse, pokachu);
@@ -303,6 +336,8 @@ int main()
     else {
         std::cout << "Bizarre pokachu aurait dû se réveiller..." << std::endl;
     }
+
+
     //Attention aux double free et fuites mémoires
     Professeur Phelina(Chen);
     Professeur Orme(Chen);
@@ -310,9 +345,14 @@ int main()
     //vérification de la copie
     std::cout << "TEST Professeur : affichage de l'information des professeurs" << std::endl;
     std::cout << Chen << std::endl;
-    std::cout << Orme << std::endl;
+    std::cout << Orme << std::endl;																			/* operator << pour afficher loutil ?? */
     std::cout << Phelina << std::endl;
     std::cout << "FIN TEST" << std::endl;
 
+	cout << " ---------------------------------------------------------FIN-----------------------------------------------------" << endl;
+
+
 	return 0;
+
+	
 }

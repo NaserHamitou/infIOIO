@@ -6,13 +6,31 @@
 class EtatConfus : public EtatCreature{
 
 public:
+
+	//Constructeur par parametre
 	EtatConfus(const std::string& nom);
+
+	//Constructeur par parametre
 	EtatConfus(const std::string& nom, unsigned int duree);
 
-	friend EtatConfus& operator<<(std::ostream& os, const EtatConfus& confus);
+	/*Methode peutAttaquer
+	retourn boolean */
+	bool peutAttaquer();
 
+	/*Methode appliquerEtat
+	Param Creature& creature */
+	void appliquerEtat(Creature& creature);
 
+	//Methode estFini retourn boolean
+	bool estFini();
 
-}
+private :
+
+	int duree_;
+	   
+};
+
+//operateur << surcharger
+std::ostream& operator<<(std::ostream& os, const EtatConfus& confus);
 
 #endif

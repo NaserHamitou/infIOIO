@@ -2,7 +2,6 @@
 
 EtatCreature::EtatCreature(const std::string & nom) : nom_(nom), duree_(0), type_(TypeEtat::TypeEtat_normal)
 {
-
 }
 
 EtatCreature::EtatCreature(const std::string & nom, unsigned int duree) : nom_(nom), duree_(duree), type_(TypeEtat::TypeEtat_normal)

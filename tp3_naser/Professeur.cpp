@@ -1,24 +1,35 @@
 #include "Professeur.h"
 
-Professeur::Professeur(const string& nom, const string& equipe, OutilScientifique* outil) : Dresseur(nom, equipe), ptrOutilScientifique_(outil) 
-{}
+Professeur::Professeur(const string& nom, const string& equipe) : Dresseur(nom, equipe)
+{
+	outilScientifique_ = nullptr;
+}
 
 Professeur::Professeur(const Professeur& prof) {
 	nom_ = prof.nom_;
 	equipe_ = prof.equipe_;
-	ptrOutilScientifique_ = prof.ptrOutilScientifique_;
+	if(prof.outilScientifique_ != nullptr)
+		outilScientifique_ = new OutilScientifique(*prof.outilScientifique_);
+	else
+	{
+		outilScientifique_ = nullptr;
+	}
 	creatures_ = prof.creatures_;
 }
 
 Professeur::~Professeur() {
-	delete ptrOutilScientifique_;
+	delete outilScientifique_;
+	outilScientifique_ = nullptr;
 }
 
 void Professeur::modifierOutilScientifique(OutilScientifique* outil) {
-	ptrOutilScientifique_ = outil;
+	
+	delete outilScientifique_;
+	outilScientifique_ = nullptr;
+	outilScientifique_ = new OutilScientifique(*outil);
 }
 
-void Professeur::soigner(Creature& creature) {
+void Professeur::soigner(Creature& creature) const {
 	creature.modifierPointDeVie(creature.obtenirPointDeVieTotal());
 	creature.modifierEnergie(creature.obtenirEnergieTotale());
 }
@@ -28,14 +39,15 @@ Professeur& Professeur::operator=(const Professeur& prof) {
 	if (this != &prof) {
 		nom_ = prof.nom_;
 		equipe_ = prof.equipe_;
-		ptrOutilScientifique_ = ptrOutilScientifique_;
+		delete outilScientifique_;
+		outilScientifique_ = new OutilScientifique(*prof.outilScientifique_);
 	}
 
 	return *this;
 
 }
 
-void Professeur::utiliserOutil(Creature& creature) {
-	ptrOutilScientifique_->utiliser(creature);
+void Professeur::utiliserOutil(Creature& creature) const {
+	outilScientifique_->utiliser(creature);
 }
 

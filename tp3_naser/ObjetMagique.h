@@ -33,7 +33,7 @@ public:
 
 	friend std::ostream& operator<<(std::ostream& os, const ObjetMagique& objet);
 
-private:
+protected:
 	std::string nom_;
 	int bonus_;
 };

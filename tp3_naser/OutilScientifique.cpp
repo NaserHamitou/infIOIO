@@ -5,7 +5,8 @@ OutilScientifique::OutilScientifique(const std::string & nom, const std::string 
 {
 }
 
-OutilScientifique::~OutilScientifique()
+
+OutilScientifique::~OutilScientifique() 
 {
 }
 

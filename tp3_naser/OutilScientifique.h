@@ -15,7 +15,7 @@ class OutilScientifique
 {
 public:
     OutilScientifique(const std::string& nom, const std::string& description);
-    ~OutilScientifique();
+	~OutilScientifique();
 
     std::string obtenirNom() const;
     std::string obtenirDesciption() const;

@@ -13,6 +13,7 @@ Description: La classe Pouvoir correspond aux differents attaques
 
 #include "Creature.h"
 #include "TypeEtat.h"
+#include "EtatCreature.h"
 
 class Creature;
 
@@ -42,6 +43,7 @@ public:
 
     void appliquerEffetOffensif(Creature& creatureEnnemie);
     void appliquerEffetDefensif(Creature& creatureAllie);
+
 protected:
 	std::string nom_;
 	unsigned int nombreDeDegat_ ;
