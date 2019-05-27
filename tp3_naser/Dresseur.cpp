@@ -17,10 +17,6 @@ Dresseur::Dresseur(const std::string& nom, const std::string& equipe) : nom_(nom
 Dresseur::~Dresseur()
 {
 	delete objetMagique_;
-<<<<<<< HEAD
-=======
-	objetMagique_ = nullptr;
->>>>>>> f7ee4e751e9ec3ce6c07cf6320f00a855590d6df
 };
 
 std::string Dresseur::obtenirNom() const

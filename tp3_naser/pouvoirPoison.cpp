@@ -10,15 +10,9 @@ PouvoirPoison::PouvoirPoison(const std::string& nom,
 	type_ = TypeEtat_empoisonne;
 }
 
-<<<<<<< HEAD
 void PouvoirPoison::appliquerEffetOffensif(Creature& creatureEnnemie) const {
 
 	creatureEnnemie.modifierEtat(new EtatEmpoisonne("poison", duree_));     	         /*!! not sure !!*/
-=======
-void PouvoirPoison::appliquerEffetOffensif(Creature& creatureEnnemie) {
-
-	creatureEnnemie.modifierEtat(new EtatCreature("poison", duree_));     	         /*!! not sure !!*/
->>>>>>> f7ee4e751e9ec3ce6c07cf6320f00a855590d6df
 
 }
 

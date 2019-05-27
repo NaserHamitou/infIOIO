@@ -1,12 +1,28 @@
-﻿
-
-/*
+﻿/*
 Fichier: main.cpp
 Auteur(s): Alexandre MAO
 Date de creation: 31 aout 2016
 Date de modification: 30 septembre 2016 par Philippe Troclet
 Description: Programme de test
 */
+
+/*********************************************** Réponses aux questions ***********************************************************
+
+1. Il y a parfois incoherence dans l'affichage des donnees dans le cas de la classe EtatCreature et ses classes derivees, car les 2 ont un operateur d'affichage << surchargé. Si l'Etat est celui de la classe de base, alors la duree ne sera pas afficher car son operateur << n'affiche par de duree tant dis que si l'Etat est l'un des classes derivee alors la duree s'affichera car ca sera l'operateur << de la classe derivée qui sera appelé.
+
+2. Ordre d'appel lors d’un appel au constructeur par
+paramètres de Professeur :
+Dresseur(string, string)  ->  Professeur(string, string) 
+
+3. 
+1) m = f :  pas valide
+2) f = m :	valide
+3) mPoiteur = &f :	pas valide
+4) fPointeur = &m :	 valide
+5) fonctionSurMere(f) : pas valide 
+6) foncionSurFille(m) : valide
+
+***********************************************************************************************************************************/
 
 #include <iostream>
 #include <time.h>
@@ -155,11 +171,7 @@ void afficherEtatSelonType(Creature& creature) {
 
 int main()
 {
-<<<<<<< HEAD
 
-=======
-	
->>>>>>> f7ee4e751e9ec3ce6c07cf6320f00a855590d6df
 	srand(time(NULL));
     setlocale(LC_ALL, "");
 
@@ -250,7 +262,7 @@ int main()
             pokachu.modifierEtat(new EtatCreature("normal")); //attention aux fuites mémoires
 
         std::cout << "affichage de l'etat de Pokachu" << std::endl;
-        std::cout << "Pokachu est dans l'état: " << *(pokachu.obtenirEtat()) << std::endl;						/* Faut-il afficher la duree de letat ???? */
+        std::cout << "Pokachu est dans l'état: " << *(pokachu.obtenirEtat()) << std::endl;
         std::cout << "affichage de l'etat de Pokachu (autre méthode)" << std::endl;
         afficherEtatSelonType(pokachu);
     }
@@ -355,10 +367,7 @@ int main()
 
 	cout << " ---------------------------------------------------------FIN-----------------------------------------------------" << endl;
 
-<<<<<<< HEAD
 
-=======
->>>>>>> f7ee4e751e9ec3ce6c07cf6320f00a855590d6df
 	return 0;
 
 	

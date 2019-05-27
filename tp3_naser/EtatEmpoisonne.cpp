@@ -19,7 +19,7 @@ bool EtatEmpoisonne::estFini() {
 
 std::ostream& operator<<(std::ostream& os, const EtatEmpoisonne& empoisonne) {
 
-	os << "La creature est dans une etat " << empoisonne.obtenirNom() << std::endl;
+	os << "La creature est dans une etat " << empoisonne.obtenirNom() << " il durera " << empoisonne.duree_ << std::endl;
 
 	return os;
 }

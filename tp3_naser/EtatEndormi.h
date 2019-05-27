@@ -6,7 +6,6 @@
 class EtatEndormi : public EtatCreature {
 
 public :
-<<<<<<< HEAD
 
 	//Constructeur par parametre
 	EtatEndormi(const std::string& nom);
@@ -34,17 +33,5 @@ private :
 
 };
 
-=======
-	EtatEndormi(const std::string& nom);
-	EtatEndormi(const std::string& nom, unsigned int duree);
-
-	bool peutAttaquer();
-	void appliquerEtat(Creature& creature);
-	bool estFini();
-
-};
-
-std::ostream& operator<<(std::ostream& os, const EtatEndormi& endormi);
->>>>>>> f7ee4e751e9ec3ce6c07cf6320f00a855590d6df
 
 #endif

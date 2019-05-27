@@ -18,7 +18,7 @@ public:
 	~Professeur();
 
 	//La méthode de modification de l’attribut outil
-	void modifierOutilScientifique(OutilScientifique* outil);
+	void modifierOutilScientifique( OutilScientifique* outil);
 
 	//Methode soigner 
 	void soigner(Creature& creature) const;
@@ -27,11 +27,10 @@ public:
 	Professeur& operator=(const Professeur& prof);
 
 	//Methode utiliserOutil 
-<<<<<<< HEAD
 	void utiliserOutil(Creature& creature) const;
-=======
-	void utiliserOutil(Creature& creature);
->>>>>>> f7ee4e751e9ec3ce6c07cf6320f00a855590d6df
+
+	//operateur << surcharge pour afficher le professeur et son outil
+	friend ostream& operator<<(ostream& os, const Professeur& prof);
 
 
 private:

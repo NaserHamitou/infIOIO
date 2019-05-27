@@ -9,11 +9,7 @@ EtatEndormi::EtatEndormi(const std::string& nom, unsigned int duree) : EtatCreat
 	type_ = TypeEtat_endormi;
 }
 
-<<<<<<< HEAD
 bool EtatEndormi::peutAttaquer() const {
-=======
-bool EtatEndormi::peutAttaquer() {
->>>>>>> f7ee4e751e9ec3ce6c07cf6320f00a855590d6df
 	return false;
 }
 
@@ -28,7 +24,7 @@ bool EtatEndormi::estFini() {
 
 std::ostream& operator<<(std::ostream& os, const EtatEndormi& endormi) {
 
-	os << "La creature est dans une etat " << endormi.obtenirNom() << std::endl;
+	os << "La creature est dans une etat " << endormi.obtenirNom() << " il durera " << endormi.duree_ << std::endl;
 
 	return os;
 }
