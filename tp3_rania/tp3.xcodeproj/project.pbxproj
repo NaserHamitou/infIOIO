@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22A2A7132299B5B700627734 /* EtatEndormi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22A2A7122299B5B700627734 /* EtatEndormi.cpp */; };
+		22A2A7162299BB8B00627734 /* EtatEmpoisonne.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22A2A7152299BB8B00627734 /* EtatEmpoisonne.cpp */; };
+		22A2A71A2299D02E00627734 /* PotionMagique.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22A2A7192299D02E00627734 /* PotionMagique.cpp */; };
+		22A2A71D229A568F00627734 /* GreenBull.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22A2A71C229A568F00627734 /* GreenBull.cpp */; };
+		22A2A71F229B4AAA00627734 /* Elixir.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22A2A71E229B4AAA00627734 /* Elixir.cpp */; };
+		22A2A722229BAFBD00627734 /* pouvoirPoison.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22A2A721229BAFBD00627734 /* pouvoirPoison.cpp */; };
+		22A2A726229DC51600627734 /* pouvoirSoporifique.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22A2A725229DC51600627734 /* pouvoirSoporifique.cpp */; };
+		22A2A728229DEBEA00627734 /* pouvoirHallucinogene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22A2A727229DEBEA00627734 /* pouvoirHallucinogene.cpp */; };
+		22A2A72C229DF10F00627734 /* CreatureMagique.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22A2A72B229DF10F00627734 /* CreatureMagique.cpp */; };
 		22EC11A52295C4690036C9D5 /* Pouvoir.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22EC11972295C4690036C9D5 /* Pouvoir.cpp */; };
 		22EC11A62295C4690036C9D5 /* PolyLand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22EC11982295C4690036C9D5 /* PolyLand.cpp */; };
 		22EC11A72295C4690036C9D5 /* Dresseur.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22EC119C2295C4690036C9D5 /* Dresseur.cpp */; };
@@ -32,6 +41,24 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		22A2A7122299B5B700627734 /* EtatEndormi.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EtatEndormi.cpp; sourceTree = SOURCE_ROOT; };
+		22A2A7142299B5FB00627734 /* EtatEndormi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EtatEndormi.h; sourceTree = SOURCE_ROOT; };
+		22A2A7152299BB8B00627734 /* EtatEmpoisonne.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EtatEmpoisonne.cpp; sourceTree = SOURCE_ROOT; };
+		22A2A7172299BBA800627734 /* EtatEmpoisonne.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EtatEmpoisonne.h; sourceTree = SOURCE_ROOT; };
+		22A2A7182299CFEB00627734 /* PotionMagique.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PotionMagique.h; sourceTree = SOURCE_ROOT; };
+		22A2A7192299D02E00627734 /* PotionMagique.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PotionMagique.cpp; sourceTree = SOURCE_ROOT; };
+		22A2A71B229A566200627734 /* GreenBull.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GreenBull.h; sourceTree = SOURCE_ROOT; };
+		22A2A71C229A568F00627734 /* GreenBull.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GreenBull.cpp; sourceTree = SOURCE_ROOT; };
+		22A2A71E229B4AAA00627734 /* Elixir.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Elixir.cpp; sourceTree = SOURCE_ROOT; };
+		22A2A720229B4AC400627734 /* Elixir.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Elixir.h; sourceTree = SOURCE_ROOT; };
+		22A2A721229BAFBD00627734 /* pouvoirPoison.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = pouvoirPoison.cpp; sourceTree = SOURCE_ROOT; };
+		22A2A723229BAFDD00627734 /* pouvoirPoison.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pouvoirPoison.h; sourceTree = SOURCE_ROOT; };
+		22A2A724229DC4FB00627734 /* pouvoirSoporifique.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pouvoirSoporifique.h; sourceTree = SOURCE_ROOT; };
+		22A2A725229DC51600627734 /* pouvoirSoporifique.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = pouvoirSoporifique.cpp; sourceTree = SOURCE_ROOT; };
+		22A2A727229DEBEA00627734 /* pouvoirHallucinogene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = pouvoirHallucinogene.cpp; sourceTree = SOURCE_ROOT; };
+		22A2A729229DEC0800627734 /* pouvoirHallucinogene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pouvoirHallucinogene.h; sourceTree = SOURCE_ROOT; };
+		22A2A72A229DF0F500627734 /* CreatureMagique.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreatureMagique.h; sourceTree = SOURCE_ROOT; };
+		22A2A72B229DF10F00627734 /* CreatureMagique.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CreatureMagique.cpp; sourceTree = SOURCE_ROOT; };
 		22EC118D2295C4090036C9D5 /* tp3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = tp3; sourceTree = BUILT_PRODUCTS_DIR; };
 		22EC11972295C4690036C9D5 /* Pouvoir.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Pouvoir.cpp; sourceTree = SOURCE_ROOT; };
 		22EC11982295C4690036C9D5 /* PolyLand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PolyLand.cpp; sourceTree = SOURCE_ROOT; };
@@ -85,15 +112,27 @@
 		22EC118F2295C4090036C9D5 /* tp3 */ = {
 			isa = PBXGroup;
 			children = (
-				22EC11A32295C4690036C9D5 /* Creature.cpp */,
 				22EC11AD2295C47C0036C9D5 /* main.cpp */,
+				22EC11A32295C4690036C9D5 /* Creature.cpp */,
 				22EC11992295C4690036C9D5 /* Creature.h */,
+				22A2A72A229DF0F500627734 /* CreatureMagique.h */,
+				22A2A72B229DF10F00627734 /* CreatureMagique.cpp */,
 				22EC11B82295C9EB0036C9D5 /* Professeur.h */,
 				22EC11B92295CA200036C9D5 /* Professeur.cpp */,
 				22EC119C2295C4690036C9D5 /* Dresseur.cpp */,
 				22EC119E2295C4690036C9D5 /* Dresseur.h */,
 				22EC11BD2295E8AE0036C9D5 /* EtatConfus.h */,
 				22EC11BE2295E9B90036C9D5 /* EtatConfus.cpp */,
+				22A2A7122299B5B700627734 /* EtatEndormi.cpp */,
+				22A2A7152299BB8B00627734 /* EtatEmpoisonne.cpp */,
+				22A2A7182299CFEB00627734 /* PotionMagique.h */,
+				22A2A7192299D02E00627734 /* PotionMagique.cpp */,
+				22A2A71B229A566200627734 /* GreenBull.h */,
+				22A2A71C229A568F00627734 /* GreenBull.cpp */,
+				22A2A71E229B4AAA00627734 /* Elixir.cpp */,
+				22A2A720229B4AC400627734 /* Elixir.h */,
+				22A2A7172299BBA800627734 /* EtatEmpoisonne.h */,
+				22A2A7142299B5FB00627734 /* EtatEndormi.h */,
 				22EC119D2295C4690036C9D5 /* EtatCreature.cpp */,
 				22EC11A12295C4690036C9D5 /* EtatCreature.h */,
 				22EC11A22295C4690036C9D5 /* ObjetMagique.cpp */,
@@ -103,8 +142,14 @@
 				22EC11982295C4690036C9D5 /* PolyLand.cpp */,
 				22EC11AC2295C4710036C9D5 /* TypeEtat.h */,
 				22EC11A42295C4690036C9D5 /* PolyLand.h */,
-				22EC11972295C4690036C9D5 /* Pouvoir.cpp */,
 				22EC119B2295C4690036C9D5 /* Pouvoir.h */,
+				22EC11972295C4690036C9D5 /* Pouvoir.cpp */,
+				22A2A721229BAFBD00627734 /* pouvoirPoison.cpp */,
+				22A2A723229BAFDD00627734 /* pouvoirPoison.h */,
+				22A2A724229DC4FB00627734 /* pouvoirSoporifique.h */,
+				22A2A725229DC51600627734 /* pouvoirSoporifique.cpp */,
+				22A2A727229DEBEA00627734 /* pouvoirHallucinogene.cpp */,
+				22A2A729229DEC0800627734 /* pouvoirHallucinogene.h */,
 			);
 			path = tp3;
 			sourceTree = "<group>";
@@ -167,13 +212,22 @@
 			files = (
 				22EC11AB2295C4690036C9D5 /* Creature.cpp in Sources */,
 				22EC11AA2295C4690036C9D5 /* ObjetMagique.cpp in Sources */,
+				22A2A7162299BB8B00627734 /* EtatEmpoisonne.cpp in Sources */,
+				22A2A726229DC51600627734 /* pouvoirSoporifique.cpp in Sources */,
+				22A2A7132299B5B700627734 /* EtatEndormi.cpp in Sources */,
 				22EC11A72295C4690036C9D5 /* Dresseur.cpp in Sources */,
 				22EC11A62295C4690036C9D5 /* PolyLand.cpp in Sources */,
 				22EC11A82295C4690036C9D5 /* EtatCreature.cpp in Sources */,
+				22A2A71F229B4AAA00627734 /* Elixir.cpp in Sources */,
 				22EC11BA2295CA200036C9D5 /* Professeur.cpp in Sources */,
+				22A2A71D229A568F00627734 /* GreenBull.cpp in Sources */,
 				22EC11A52295C4690036C9D5 /* Pouvoir.cpp in Sources */,
+				22A2A72C229DF10F00627734 /* CreatureMagique.cpp in Sources */,
+				22A2A71A2299D02E00627734 /* PotionMagique.cpp in Sources */,
 				22EC11AE2295C47C0036C9D5 /* main.cpp in Sources */,
 				22EC11A92295C4690036C9D5 /* OutilScientifique.cpp in Sources */,
+				22A2A728229DEBEA00627734 /* pouvoirHallucinogene.cpp in Sources */,
+				22A2A722229BAFBD00627734 /* pouvoirPoison.cpp in Sources */,
 				22EC11BF2295E9B90036C9D5 /* EtatConfus.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

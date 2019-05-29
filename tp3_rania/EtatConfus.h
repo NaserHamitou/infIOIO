@@ -25,3 +25,4 @@ public:
 };
 
 #endif /* EtatConfus_h */
+

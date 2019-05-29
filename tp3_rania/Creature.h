@@ -65,14 +65,15 @@ public:
 
 	friend std::ostream& operator<<(std::ostream& os, const Creature& creature);
 
+protected:
+    std::string nom_;
+    unsigned int attaque_;
+    unsigned int defense_;
+    unsigned int pointDeVie_;
+    unsigned int energie_;
+    
 private:
-
-	std::string nom_;
-	unsigned int attaque_;
-	unsigned int defense_;
-	unsigned int pointDeVie_;
 	unsigned int pointDeVieTotal_;
-	unsigned int energie_;
 	unsigned int energieTotal_;
 	unsigned int experience_;
 	unsigned int experienceNecessaire_;

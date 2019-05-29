@@ -18,7 +18,7 @@ void EtatCreature::appliquerEtat(Creature & creature)
 }
 
 bool EtatCreature::peutAttaquer() const//CHAUD
-{   return type_; //arevoir la logique
+{   return true; //arevoir la logique
 }
 
 bool EtatCreature::estFini() const

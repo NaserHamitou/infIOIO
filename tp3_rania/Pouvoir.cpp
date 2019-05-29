@@ -4,6 +4,10 @@
 
 Pouvoir::Pouvoir()
 {
+    std::string nom_;
+    unsigned int nombreDeDegat_ ;
+    unsigned int energieNecessaire_;
+    TypeEtat type_;
 }
 
 Pouvoir::Pouvoir(const std::string& nom, 

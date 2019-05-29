@@ -31,11 +31,11 @@ public:
     TypeEtat obtenirType() const;
 
     friend std::ostream& operator<<(std::ostream& o, const EtatCreature& etatCreature);
-private:
-    std::string nom_;
+
 protected:
     unsigned int duree_;
     TypeEtat type_;
+     std::string nom_;
 };
 #endif // !ETAT_CREATURE_H
 
