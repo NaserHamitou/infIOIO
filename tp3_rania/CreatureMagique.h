@@ -13,7 +13,7 @@
 class CreatureMagique:public Creature
 {
 public:
-    CreatureMagique(const std::string& nom, unsigned int attaque,unsigned int defense, unsigned int pointDeVie, unsigned int energie);
+    CreatureMagique(const std::string& nom, unsigned int attaque,unsigned int defense, unsigned int pointDeVie, unsigned int energie,int bonus);
     //constructeur pae copie
     CreatureMagique(const CreatureMagique& creatureMagique);
     

@@ -71,8 +71,6 @@ protected:
     unsigned int defense_;
     unsigned int pointDeVie_;
     unsigned int energie_;
-    
-private:
 	unsigned int pointDeVieTotal_;
 	unsigned int energieTotal_;
 	unsigned int experience_;
@@ -82,7 +80,6 @@ private:
    
 
     void revenirEtatNormal();
-protected:
      EtatCreature* etat_;
 };
 

@@ -18,17 +18,17 @@ class Professeur : public Dresseur
 {
 public:
     
-    Professeur(const std::string& nom, const std::string& equipe, OutilScientifique* outilScientifique);
+    Professeur(const std::string& nom, const std::string& equipe);
     Professeur(const Professeur& professeur);
     ~Professeur();
-    OutilScientique* obtenirOutilScientifique()const;
+    OutilScientifique* obtenirOutilScientifique()const;
     void modifierOutilScientifique(OutilScientifique* outilScientifique);
-    void soigner(std::vector<Creature*> creatures_);
+    void soigner(Creature& creature) const;
     Professeur& operator=(const Professeur& professeur);
-    void utiliserOutil();
+    void utiliserOutil(Creature& creature);
     
 private:
     OutilScientifique* outilScientifique_;
-}
+};
 
 #endif /* Professeur_h */

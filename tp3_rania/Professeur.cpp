@@ -8,17 +8,26 @@
 
 #include "Professeur.h"
 
-Professeur::Professeur(const std::string& nom, const std::string& equipe, OutilScientifique* outilScientifique):outilScientifique_(outilScientifique),Dresseur(nom, equipe)
+Professeur::Professeur(const std::string& nom, const std::string& equipe) : Dresseur(nom, equipe)
 {
+    outilScientifique_ = nullptr;
 }
 
-Professeur::Professeur(const Professeur& professeur):outilScientifique_(professeur.outilScientifique_), Dresseur(professeur.obtenirNom(),professeur.obtenirEquipe())
-{
+Professeur::Professeur(const Professeur& prof) {
+    nom_ = prof.nom_;
+    equipe_ = prof.equipe_;
+    if(prof.outilScientifique_ != nullptr)
+        outilScientifique_ = new OutilScientifique(*prof.outilScientifique_);
+    else
+    {
+        outilScientifique_ = nullptr;
+    }
+    creatures_ = prof.creatures_;
 }
 
-Professeur::~Professeur()
-{
+Professeur::~Professeur() {
     delete outilScientifique_;
+    outilScientifique_ = nullptr;
 }
 OutilScientifique* Professeur::obtenirOutilScientifique()const
 {
@@ -30,12 +39,7 @@ void Professeur::modifierOutilScientifique(OutilScientifique* outilScientifique)
 {
     outilScientifique_=outilScientifique;
 }
-void Professeur:: soigner(Creature& creatures)//
-{
-    creatures.nom_=
-    
-    
-}
+
 Professeur& Professeur::operator=(const Professeur& professeur)
 {
     if (this != &professeur) {
@@ -57,5 +61,11 @@ Professeur& Professeur::operator=(const Professeur& professeur)
 
 void Professeur::utiliserOutil(Creature& creature)
 {
-    outilScientifique_->utiliser(c);//
+    outilScientifique_->utiliser(creature);
+}
+
+void Professeur::soigner(Creature& creature) const
+{
+    creature.modifierPointDeVie(creature.obtenirPointDeVieTotal());
+    creature.modifierEnergie(creature.obtenirEnergieTotale());
 }
