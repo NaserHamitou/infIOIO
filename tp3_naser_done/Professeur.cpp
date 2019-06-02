@@ -1,8 +1,7 @@
 #include "Professeur.h"
 
-Professeur::Professeur(const string& nom, const string& equipe) : Dresseur(nom, equipe)
+Professeur::Professeur(const string& nom, const string& equipe) : Dresseur(nom, equipe), outilScientifique_(nullptr);
 {
-	outilScientifique_ = nullptr;
 }
 
 Professeur::Professeur(const Professeur& prof) {
@@ -37,8 +36,8 @@ void Professeur::soigner(Creature& creature) const {
 Professeur& Professeur::operator=(const Professeur& prof) {
 
 	if (this != &prof) {
-		nom_ = prof.nom_;
-		equipe_ = prof.equipe_;
+		nom_ = prof.nom_; //obtenirNom
+		equipe_ = prof.equipe_; //obtenirEquipe
 		delete outilScientifique_;
 		outilScientifique_ = new OutilScientifique(*prof.outilScientifique_);
 	}
