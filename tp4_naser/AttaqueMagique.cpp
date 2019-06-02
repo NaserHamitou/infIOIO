@@ -1,5 +1,7 @@
 #include "AttaqueMagique.h"
 
+AttaqueMagique::AttaqueMagique() {}
+
 AttaqueMagique::AttaqueMagique(int duree) : duree_(duree) {}
 
 AttaqueMagique::~AttaqueMagique() {}
@@ -14,7 +16,7 @@ void AttaqueMagique::modifierDuree(int duree) {
 
 std::string AttaqueMagique::obtenirTypeAttaque() const {}
 
-void AttaqueMagique::appliquerAttaque() {}
+void AttaqueMagique::appliquerAttaque(Creature& creature) {}
 
 bool AttaqueMagique::estFini() {
 	return true;

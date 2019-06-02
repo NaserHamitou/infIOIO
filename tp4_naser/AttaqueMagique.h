@@ -3,11 +3,14 @@
 
 #include <iostream>
 #include <string>
+#include "Creature.h"
 
 class AttaqueMagique
 {
 
 public :
+
+	AttaqueMagique();
 
 	AttaqueMagique(int duree);
 
@@ -19,7 +22,7 @@ public :
 
 	std::string obtenirTypeAttaque() const;
 
-	virtual void appliquerAttaque() = 0;
+	virtual void appliquerAttaque(Creature& creature) = 0;
 
 	bool estFini();
 
@@ -27,7 +30,7 @@ public :
 
 protected :
 
-	int duree_;   
+	unsigned int duree_;   
 
 };
 
