@@ -3,7 +3,7 @@
 
 #include "AttaqueMagique.h"
 
-class AttaqueMagiqueConfusion :public AttaqueMagique
+class AttaqueMagiqueConfusion : public AttaqueMagique
 {
 public :
 
@@ -11,13 +11,13 @@ public :
 
 	AttaqueMagiqueConfusion(int duree);
 
-	~AttaqueMagiqueConfusion();
+	virtual ~AttaqueMagiqueConfusion();
 
-	std::string obtenirTypeAttaque();
+	std::string obtenirTypeAttaque() const override;
 
-	void appliquerAttaque(Creature& creature);
+	void appliquerAttaque(Creature& creature) override;
 
-	bool estFini();
+	bool estFini() override;
 
 
 };

@@ -26,8 +26,11 @@ public:
 
     friend std::ostream& operator<<(std::ostream& os, const CreatureMagique& creature); // À MODIFIER (si nécessaire...)
 	
-	AttaqueMagique* obtenirAttaque();
-	unsigned int obtenirBonus();
+	AttaqueMagique* obtenirAttaque() const;
+	unsigned int obtenirBonus() const;
+
+	std::string obtenirTypeCreature() const;
+
 	void modifierBonus(unsigned int bonus);
 
 	void apprendreAttaqueMagique(const AttaqueMagique* attaqueMagique);

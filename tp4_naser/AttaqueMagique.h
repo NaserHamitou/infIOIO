@@ -14,19 +14,19 @@ public :
 
 	AttaqueMagique(int duree);
 
-	~AttaqueMagique();
+	virtual ~AttaqueMagique() = default;
 
 	int obtenirDuree();
 
 	void modifierDuree(int duree);
 
-	std::string obtenirTypeAttaque() const;
+	virtual std::string obtenirTypeAttaque() const = 0;
 
 	virtual void appliquerAttaque(Creature& creature) = 0;
 
-	bool estFini();
+	virtual bool estFini();
 
-	friend std::ostream& operator<<(std::ostream& os, const AttaqueMagique& attaqueM);
+	virtual friend std::ostream& operator<<(std::ostream& os, const AttaqueMagique& attaqueM);
 
 protected :
 

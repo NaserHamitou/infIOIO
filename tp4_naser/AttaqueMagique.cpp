@@ -14,9 +14,6 @@ void AttaqueMagique::modifierDuree(int duree) {
 	duree_ = duree;
 }
 
-std::string AttaqueMagique::obtenirTypeAttaque() const {}
-
-void AttaqueMagique::appliquerAttaque(Creature& creature) {}
 
 bool AttaqueMagique::estFini() {
 	return true;

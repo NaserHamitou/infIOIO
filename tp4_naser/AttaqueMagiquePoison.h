@@ -15,17 +15,17 @@ public :
 	AttaqueMagiquePoison(int duree);
 
 	//destructeur
-	~AttaqueMagiquePoison();
+	virtual ~AttaqueMagiquePoison();
 
 	/* methode obtenirTypeAttaque
 	retourne un string */
-	std::string obtenirTypeAttaque() const;
+	std::string obtenirTypeAttaque() const override;
 
 	/* methode appliquerAttaque
 	Param Creature& creature */
-	void appliquerAttaque(Creature& creature);
+	void appliquerAttaque(Creature& creature) override;
 
-	bool estFini();
+	bool estFini() override;
 
 
 

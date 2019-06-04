@@ -60,13 +60,18 @@ void CreatureMagique::attaquer(const Pouvoir& pouvoir, Creature& creature) {
 
 }
 
-AttaqueMagique* CreatureMagique::obtenirAttaque()
+AttaqueMagique* CreatureMagique::obtenirAttaque() const
 {
 	return attaqueMagique_;
 }
 
-unsigned int CreatureMagique::obtenirBonus() {
+unsigned int CreatureMagique::obtenirBonus() const {
 	return bonus_;
+}
+
+std::string CreatureMagique::obtenirTypeCreature() const
+{
+	return "Creature";
 }
 
 void CreatureMagique::modifierBonus(unsigned int bonus) {
@@ -74,7 +79,7 @@ void CreatureMagique::modifierBonus(unsigned int bonus) {
 }
 
 void CreatureMagique::apprendreAttaqueMagique(const AttaqueMagique* attaqueMagique) {
-	attaqueMagique_ = new AttaqueMagique(*attaqueMagique);                             //more dynamic cast stuff
+	//attaqueMagique_ = new AttaqueMagique(*attaqueMagique);                               //more dynamic cast stuff
 }
 
 void CreatureMagique::oublierAttaqueMagique(const AttaqueMagique* attaqueMagique)

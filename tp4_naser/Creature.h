@@ -32,6 +32,8 @@ public:
 	unsigned int obtenirNiveau() const;
 	std::vector<Pouvoir*> obtenirPouvoirs() const;
 
+	virtual std::string obtenirTypeCreature();
+
 	void attaquer(const Pouvoir& pouvoir,Creature& creature);
 	int experienceGagnee(const Creature& creature);
 

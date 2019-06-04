@@ -10,8 +10,8 @@ AttaqueMagiqueConfusion::AttaqueMagiqueConfusion(int duree) {
 
 AttaqueMagiqueConfusion::~AttaqueMagiqueConfusion() {}
 
-std::string AttaqueMagiqueConfusion::obtenirTypeAttaque() {
-	return "Confusion";
+std::string AttaqueMagiqueConfusion::obtenirTypeAttaque() const {
+	return "AttaqueMagiqueConfusion";
 }
 
 void AttaqueMagiqueConfusion::appliquerAttaque(Creature& creature) {

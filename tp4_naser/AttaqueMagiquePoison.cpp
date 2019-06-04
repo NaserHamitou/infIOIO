@@ -11,7 +11,7 @@ AttaqueMagiquePoison::AttaqueMagiquePoison(int duree) {
 AttaqueMagiquePoison::~AttaqueMagiquePoison() {}
 
 std::string AttaqueMagiquePoison::obtenirTypeAttaque() const {
-	return "Poison";
+	return "AttaqueMagiquePoison";
 }
 
 void AttaqueMagiquePoison::appliquerAttaque(Creature& creature) {
