@@ -88,11 +88,6 @@ std::vector<Pouvoir*> Creature::obtenirPouvoirs() const
 	return pouvoirs_;
 }
 
-std::string Creature::obtenirTypeCreature()
-{
-	return "Creature";
-}
-
 
 void Creature::attaquer(const Pouvoir & pouvoir, Creature & creature)
 {
@@ -259,12 +254,6 @@ Creature& Creature::operator=(const Creature& creature)
 		energie_ = creature.energie_;
 		experience_ = creature.experience_;
 		niveau_ = creature.niveau_;
-		while (pouvoirs_.size() != 0)
-		{
-			delete pouvoirs_.back();
-			pouvoirs_.back() = nullptr;
-			pouvoirs_.pop_back();
-		}
 		for (unsigned int i = 0; i < creature.pouvoirs_.size(); i++)
 		{
 			pouvoirs_.push_back(new Pouvoir(*creature.pouvoirs_[i]));
