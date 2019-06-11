@@ -57,7 +57,7 @@ void Pouvoir::modifierNom(const string& nom)
 	nom_ = nom;
 }
 
-Pouvoir Pouvoir::operator=(const Pouvoir& pouvoir){
+Pouvoir& Pouvoir::operator=(const Pouvoir& pouvoir){
 	return pouvoir;
 }
 

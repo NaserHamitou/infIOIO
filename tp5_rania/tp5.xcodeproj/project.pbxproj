@@ -1,0 +1,337 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		224BB2D922A842EF00E786FD /* PolyLand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 224BB2C822A842EE00E786FD /* PolyLand.cpp */; };
+		224BB2DA22A842EF00E786FD /* CreatureMagique.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 224BB2CA22A842EE00E786FD /* CreatureMagique.cpp */; };
+		224BB2DB22A842EF00E786FD /* ObjetMagique.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 224BB2CC22A842EE00E786FD /* ObjetMagique.cpp */; };
+		224BB2DC22A842EF00E786FD /* AttaqueMagiquePoison.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 224BB2CE22A842EF00E786FD /* AttaqueMagiquePoison.cpp */; };
+		224BB2DD22A842EF00E786FD /* AttaqueMagiqueConfusion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 224BB2D022A842EF00E786FD /* AttaqueMagiqueConfusion.cpp */; };
+		224BB2DE22A842EF00E786FD /* Dresseur.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 224BB2D122A842EF00E786FD /* Dresseur.cpp */; };
+		224BB2DF22A842EF00E786FD /* Creature.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 224BB2D222A842EF00E786FD /* Creature.cpp */; };
+		224BB2E022A842EF00E786FD /* Pouvoir.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 224BB2D822A842EF00E786FD /* Pouvoir.cpp */; };
+		224BB2E222A842F900E786FD /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 224BB2E122A842F900E786FD /* main.cpp */; };
+		224BB2E522A9C26400E786FD /* MondeMagique.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 224BB2E422A9C26400E786FD /* MondeMagique.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		224BB2BB22A8428E00E786FD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		224BB2BD22A8428E00E786FD /* tp5 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = tp5; sourceTree = BUILT_PRODUCTS_DIR; };
+		224BB2C722A842EE00E786FD /* Foncteur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Foncteur.h; sourceTree = SOURCE_ROOT; };
+		224BB2C822A842EE00E786FD /* PolyLand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PolyLand.cpp; sourceTree = SOURCE_ROOT; };
+		224BB2C922A842EE00E786FD /* AttaqueMagiquePoison.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttaqueMagiquePoison.h; sourceTree = SOURCE_ROOT; };
+		224BB2CA22A842EE00E786FD /* CreatureMagique.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CreatureMagique.cpp; sourceTree = SOURCE_ROOT; };
+		224BB2CB22A842EE00E786FD /* ObjetMagique.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjetMagique.h; sourceTree = SOURCE_ROOT; };
+		224BB2CC22A842EE00E786FD /* ObjetMagique.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ObjetMagique.cpp; sourceTree = SOURCE_ROOT; };
+		224BB2CD22A842EE00E786FD /* AttaqueMagique.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttaqueMagique.h; sourceTree = SOURCE_ROOT; };
+		224BB2CE22A842EF00E786FD /* AttaqueMagiquePoison.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AttaqueMagiquePoison.cpp; sourceTree = SOURCE_ROOT; };
+		224BB2CF22A842EF00E786FD /* PolyLand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolyLand.h; sourceTree = SOURCE_ROOT; };
+		224BB2D022A842EF00E786FD /* AttaqueMagiqueConfusion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AttaqueMagiqueConfusion.cpp; sourceTree = SOURCE_ROOT; };
+		224BB2D122A842EF00E786FD /* Dresseur.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Dresseur.cpp; sourceTree = SOURCE_ROOT; };
+		224BB2D222A842EF00E786FD /* Creature.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Creature.cpp; sourceTree = SOURCE_ROOT; };
+		224BB2D322A842EF00E786FD /* AttaqueMagiqueConfusion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttaqueMagiqueConfusion.h; sourceTree = SOURCE_ROOT; };
+		224BB2D422A842EF00E786FD /* CreatureMagique.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreatureMagique.h; sourceTree = SOURCE_ROOT; };
+		224BB2D522A842EF00E786FD /* Creature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Creature.h; sourceTree = SOURCE_ROOT; };
+		224BB2D622A842EF00E786FD /* Pouvoir.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pouvoir.h; sourceTree = SOURCE_ROOT; };
+		224BB2D722A842EF00E786FD /* Dresseur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dresseur.h; sourceTree = SOURCE_ROOT; };
+		224BB2D822A842EF00E786FD /* Pouvoir.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Pouvoir.cpp; sourceTree = SOURCE_ROOT; };
+		224BB2E122A842F900E786FD /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		224BB2E322A8471600E786FD /* MondeMagique.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MondeMagique.h; sourceTree = SOURCE_ROOT; };
+		224BB2E422A9C26400E786FD /* MondeMagique.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MondeMagique.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		224BB2BA22A8428E00E786FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		224BB2B422A8428E00E786FD = {
+			isa = PBXGroup;
+			children = (
+				224BB2BF22A8428E00E786FD /* tp5 */,
+				224BB2BE22A8428E00E786FD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		224BB2BE22A8428E00E786FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				224BB2BD22A8428E00E786FD /* tp5 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		224BB2BF22A8428E00E786FD /* tp5 */ = {
+			isa = PBXGroup;
+			children = (
+				224BB2E122A842F900E786FD /* main.cpp */,
+				224BB2CD22A842EE00E786FD /* AttaqueMagique.h */,
+				224BB2E322A8471600E786FD /* MondeMagique.h */,
+				224BB2E422A9C26400E786FD /* MondeMagique.cpp */,
+				224BB2D022A842EF00E786FD /* AttaqueMagiqueConfusion.cpp */,
+				224BB2D322A842EF00E786FD /* AttaqueMagiqueConfusion.h */,
+				224BB2CE22A842EF00E786FD /* AttaqueMagiquePoison.cpp */,
+				224BB2C922A842EE00E786FD /* AttaqueMagiquePoison.h */,
+				224BB2D222A842EF00E786FD /* Creature.cpp */,
+				224BB2D522A842EF00E786FD /* Creature.h */,
+				224BB2CA22A842EE00E786FD /* CreatureMagique.cpp */,
+				224BB2D422A842EF00E786FD /* CreatureMagique.h */,
+				224BB2D122A842EF00E786FD /* Dresseur.cpp */,
+				224BB2D722A842EF00E786FD /* Dresseur.h */,
+				224BB2C722A842EE00E786FD /* Foncteur.h */,
+				224BB2CC22A842EE00E786FD /* ObjetMagique.cpp */,
+				224BB2CB22A842EE00E786FD /* ObjetMagique.h */,
+				224BB2C822A842EE00E786FD /* PolyLand.cpp */,
+				224BB2CF22A842EF00E786FD /* PolyLand.h */,
+				224BB2D822A842EF00E786FD /* Pouvoir.cpp */,
+				224BB2D622A842EF00E786FD /* Pouvoir.h */,
+			);
+			path = tp5;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		224BB2BC22A8428E00E786FD /* tp5 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 224BB2C422A8428E00E786FD /* Build configuration list for PBXNativeTarget "tp5" */;
+			buildPhases = (
+				224BB2B922A8428E00E786FD /* Sources */,
+				224BB2BA22A8428E00E786FD /* Frameworks */,
+				224BB2BB22A8428E00E786FD /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tp5;
+			productName = tp5;
+			productReference = 224BB2BD22A8428E00E786FD /* tp5 */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		224BB2B522A8428E00E786FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Rania Abid";
+				TargetAttributes = {
+					224BB2BC22A8428E00E786FD = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 224BB2B822A8428E00E786FD /* Build configuration list for PBXProject "tp5" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 224BB2B422A8428E00E786FD;
+			productRefGroup = 224BB2BE22A8428E00E786FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				224BB2BC22A8428E00E786FD /* tp5 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		224BB2B922A8428E00E786FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				224BB2E022A842EF00E786FD /* Pouvoir.cpp in Sources */,
+				224BB2DF22A842EF00E786FD /* Creature.cpp in Sources */,
+				224BB2E222A842F900E786FD /* main.cpp in Sources */,
+				224BB2DE22A842EF00E786FD /* Dresseur.cpp in Sources */,
+				224BB2DB22A842EF00E786FD /* ObjetMagique.cpp in Sources */,
+				224BB2DA22A842EF00E786FD /* CreatureMagique.cpp in Sources */,
+				224BB2DD22A842EF00E786FD /* AttaqueMagiqueConfusion.cpp in Sources */,
+				224BB2E522A9C26400E786FD /* MondeMagique.cpp in Sources */,
+				224BB2D922A842EF00E786FD /* PolyLand.cpp in Sources */,
+				224BB2DC22A842EF00E786FD /* AttaqueMagiquePoison.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		224BB2C222A8428E00E786FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		224BB2C322A8428E00E786FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		224BB2C522A8428E00E786FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		224BB2C622A8428E00E786FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		224BB2B822A8428E00E786FD /* Build configuration list for PBXProject "tp5" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				224BB2C222A8428E00E786FD /* Debug */,
+				224BB2C322A8428E00E786FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		224BB2C422A8428E00E786FD /* Build configuration list for PBXNativeTarget "tp5" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				224BB2C522A8428E00E786FD /* Debug */,
+				224BB2C622A8428E00E786FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 224BB2B522A8428E00E786FD /* Project object */;
+}

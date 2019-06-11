@@ -8,8 +8,10 @@ Description: Les creatures magiques peuvent bénificier d'une attaque magique
 #ifndef CREATURE_MAGIQUE_H
 #define CREATURE_MAGIQUE_H
 
+#include "AttaqueMagique.h"
 #include "AttaqueMagiqueConfusion.h"
 #include "AttaqueMagiquePoison.h"
+#include "Creature.h"
 
 class CreatureMagique : public Creature
 {

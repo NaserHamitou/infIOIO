@@ -11,6 +11,7 @@ Description: Programme de test
 #include "Dresseur.h"
 #include "PolyLand.h"
 #include "Pouvoir.h"
+#include"CreatureMagique.h"
 #include <time.h>
 
 
@@ -65,18 +66,26 @@ int main()
 	// Creer la CREATURE MAGIQUE Touflamme en utilisant la creature existante Salimouche et un bonus de 2.
 	// Le nom de Touflamme devrai ensuite etre modifie pour "Touflamme" et son attaque passera de 12 a 15.
 	// A COMPLETER...
+	CreatureMagique Touflamme(Salimouche, 2);
+	Touflamme.modifierNom("Touflamme");
+	Touflamme.modifierAttaque(15);
+
 
 	// Creer la CREATURE MAGIQUE Pokachoum en utilisant la creature existante Pokachu et un bonus de 3.
 	// Le nom de Pokachoum devrai ensuite etre modifie pour "Pokachoum" et sa defense passera de 2 a 7.
 	// A COMPLETER...
-
+	CreatureMagique Pokachoum(Pokachu, 3);
+	Pokachoum.modifierNom("Pokachoum");
+	Pokachoum.modifierAttaque(7);
 
 	std::cout << "CRÉATION DES ATTAQUES MAGIQUES" << std::endl;
 	//Creer une attaque magique de poison avec le constructeur par défaut
 	// A COMPLETER...
-
+	AttaqueMagiquePoison attaquePoison;
+	
 	//Creer une attaque magique de confusion qui a une durée de 4
 	// A COMPLETER...
+	AttaqueMagiqueConfusion attaqueConfusion(4);
 
 
 	std::cout << "APPRENTISSAGE DES POUVOIRS" << std::endl;
@@ -100,6 +109,9 @@ int main()
 	// Pokachoum -> Confusion
 	// Touflamme -> Poison
 	// A COMPLETER...
+
+	Pokachoum.apprendreAttaqueMagique(&attaqueConfusion);
+	Touflamme.apprendreAttaqueMagique(&attaquePoison);
 
 
 	std::cout << std::endl << "AJOUT DE CREATURES ET DE DRESSEURS A POLYLAND" << std::endl << std::endl;
@@ -152,11 +164,14 @@ int main()
 
 	Salimouche.attaquer(bouleDeFeu, *(Vous.obtenirUneCreature("Pokachoum")));
 	Vous.obtenirUneCreature("Pokachoum")->attaquer(eclair, Salimouche);
+
 	//Vous gagnez obligatoirement le duel
 	while (Salimouche.obtenirPointDeVie() > 0) {
 		((Vous.obtenirUneCreature("Pokachoum")))->attaquer(eclair, Salimouche);
 	}
 	std::cout << "Vous avez battu un Salimouche, vous pouvez maintenante le capturer" << std::endl;
+
+	return 0;
 
 	if (polyland.attraperCreature(&Vous, &Salimouche)) {
 		std::cout << "Felicitation vous avez attrapé un Salimouche !" << std::endl;

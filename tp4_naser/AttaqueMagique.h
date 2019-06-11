@@ -14,7 +14,7 @@ public :
 
 	AttaqueMagique(int duree);
 
-	virtual ~AttaqueMagique() = default;
+	virtual ~AttaqueMagique();
 
 	int obtenirDuree();
 
@@ -26,7 +26,7 @@ public :
 
 	virtual bool estFini();
 
-	virtual friend std::ostream& operator<<(std::ostream& os, const AttaqueMagique& attaqueM);
+	friend std::ostream& operator<<(std::ostream& os, const AttaqueMagique& attaqueM);
 
 protected :
 

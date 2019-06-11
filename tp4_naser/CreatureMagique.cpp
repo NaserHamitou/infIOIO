@@ -8,8 +8,22 @@ bonus_(bonus), attaqueMagique_(nullptr) {}
 
 CreatureMagique::CreatureMagique(const CreatureMagique& creatureMagique) : Creature(creatureMagique) {
 
+	nom_ = creatureMagique.nom_;
+	attaque_ = creatureMagique.attaque_;
+	defense_ = creatureMagique.defense_;
+	pointDeVie_ = creatureMagique.pointDeVie_;
+	pointDeVieTotal_ = creatureMagique.pointDeVieTotal_;
+	energie_ = creatureMagique.energie_;
+	energieTotal_ = creatureMagique.energieTotal_;
+	experience_ = creatureMagique.experience_;
+	experienceNecessaire_ = creatureMagique.experienceNecessaire_;
+	niveau_ = creatureMagique.niveau_;
 	bonus_ = creatureMagique.bonus_;
-	attaqueMagique_ = creatureMagique.attaqueMagique_; // A CHANGER -> DEEP COPY -> UTILISER DYNAMIC CAST
+
+	if (dynamic_cast<AttaqueMagiqueConfusion*>(creatureMagique.attaqueMagique_))
+		attaqueMagique_ = new AttaqueMagiqueConfusion(*dynamic_cast<AttaqueMagiqueConfusion*>(creatureMagique.attaqueMagique_));
+	else
+		attaqueMagique_ = new AttaqueMagiquePoison(*dynamic_cast<AttaqueMagiquePoison*>(creatureMagique.attaqueMagique_));
 
 }
 
@@ -20,13 +34,19 @@ CreatureMagique& CreatureMagique::operator=(const CreatureMagique& creatureMagiq
 		attaque_ = creatureMagique.attaque_;
 		defense_ = creatureMagique.defense_;
 		pointDeVie_ = creatureMagique.pointDeVie_;
+		pointDeVieTotal_ = creatureMagique.pointDeVieTotal_;
 		energie_ = creatureMagique.energie_;
+		energieTotal_ = creatureMagique.energieTotal_;
 		experience_ = creatureMagique.experience_;
+		experienceNecessaire_ = creatureMagique.experienceNecessaire_;
 		niveau_ = creatureMagique.niveau_;
 		bonus_ = creatureMagique.bonus_;
 		
 		delete attaqueMagique_;
-		attaqueMagique_ = new AttaqueMagique(*creatureMagique.attaqueMagique_);  //Use Dynamic cast to fix problem ?? maybe
+		if (dynamic_cast<AttaqueMagiqueConfusion*>(creatureMagique.attaqueMagique_))
+			attaqueMagique_ = new AttaqueMagiqueConfusion(*dynamic_cast<AttaqueMagiqueConfusion*>(creatureMagique.attaqueMagique_));
+		else
+			attaqueMagique_ = new AttaqueMagiquePoison(*dynamic_cast<AttaqueMagiquePoison*>(creatureMagique.attaqueMagique_));
 
 		while (pouvoirs_.size() != 0)
 		{
@@ -43,8 +63,9 @@ CreatureMagique& CreatureMagique::operator=(const CreatureMagique& creatureMagiq
 }
 
 CreatureMagique::~CreatureMagique() {
-	Creature::~Creature();
 	delete attaqueMagique_;
+	attaqueMagique_ = nullptr;
+
 }
 
 void CreatureMagique::attaquer(const Pouvoir& pouvoir, Creature& creature) {

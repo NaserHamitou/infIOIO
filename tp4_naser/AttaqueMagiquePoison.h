@@ -1,6 +1,7 @@
 #ifndef ATTAQUEMAGIQUEPOISON_H
 #define ATTAQUEMAGIQUEPOISON_H
 
+#include "Creature.h"
 #include "AttaqueMagique.h"
 
 class AttaqueMagiquePoison : public AttaqueMagique
