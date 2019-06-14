@@ -2,8 +2,8 @@
 Fichier: CreatureMagique.h
 Auteur(s): Philippe Troclet
 Date de creation: 30 septembre 2016
-Révision: Maude Carrier (11 octobre 2016)
-Description: Les creatures magiques peuvent bénificier d'une attaque magique
+Rï¿½vision: Maude Carrier (11 octobre 2016)
+Description: Les creatures magiques peuvent bï¿½nificier d'une attaque magique
 */
 #ifndef CREATURE_MAGIQUE_H
 #define CREATURE_MAGIQUE_H
@@ -16,23 +16,28 @@ Description: Les creatures magiques peuvent bénificier d'une attaque magique
 class CreatureMagique : public Creature
 {
 public:
+//constructeur
 	CreatureMagique();
 	CreatureMagique(const Creature& creature, unsigned int bonus);
 
     CreatureMagique(const CreatureMagique& creatureMagique);
+
+//operator surcharger =
 	CreatureMagique& operator=(const CreatureMagique& creatureMagique);
 
-    ~CreatureMagique(); // À MODIFIER (si nécessaire...)
+//destructeur
+    ~CreatureMagique(); // ï¿½ MODIFIER (si nï¿½cessaire...)
 
-    void attaquer(const Pouvoir& pouvoir, Creature& creature); // À MODIFIER (si nécessaire...)
+    void attaquer(const Pouvoir& pouvoir, Creature& creature); // ï¿½ MODIFIER (si nï¿½cessaire...)
 
-    friend std::ostream& operator<<(std::ostream& os, const CreatureMagique& creature); // À MODIFIER (si nécessaire...)
-	
+    friend std::ostream& operator<<(std::ostream& os, const CreatureMagique& creature); // ï¿½ MODIFIER (si nï¿½cessaire...)//
+
+//methode getters
 	AttaqueMagique* obtenirAttaque() const;
 	unsigned int obtenirBonus() const;
-
 	std::string obtenirTypeCreature() const;
 
+//methode setters
 	void modifierBonus(unsigned int bonus);
 
 	void apprendreAttaqueMagique(const AttaqueMagique* attaqueMagique);

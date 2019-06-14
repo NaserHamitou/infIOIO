@@ -6,6 +6,17 @@ Date de modification: 6 septembre 2016 par Maude Carrier
 Description: Programme de test
 */
 
+/*
+1. Elle est abstraite, car on ne veut pas créer d'objet de cette classe. On utilise cette classe que pour contenir les methodes qui seront utilisés dans les classes qui heritent de celle-ci.
+Pour ci prendre, il faut declaré une des methodes de la classe de base comme étant virtuelle pure.
+
+2. On a déclaré le desctructeur comme étant virtuelle, car la classe CréatureMagique posséde un pointeur supplémentaire (attaqueMagique_) que l'on devait désallouer et donc pour cette raison,
+sont destructeur est différent.
+
+2. Cela nous permet d'appeler le bon desctucteur selon l'objet qu'on cherche a détruire. Ainsi, on évite de d'utiliser un destructeur de la classe base pour un objet de la classe dérivé, ce qui peut causer 
+certains problèmes comme par exemple de la mémoire qui n'est pas désallouée.
+*/
+
 #include <iostream>
 #include "Creature.h"
 #include "Dresseur.h"
